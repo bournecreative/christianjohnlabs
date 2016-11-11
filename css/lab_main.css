@@ -1,0 +1,160 @@
+/* main styles for christianjohnlabs.com
+** Colors Pallet in hex **
+* white #ffffff
+* dark green #00554F
+*/
+
+/* global */
+html, body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.display{
+    display: none;
+}
+
+/* pages */
+#welcome{
+    position: relative;
+    background: url("../imgs/lab-1400x760.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+#who{
+     background-color: #CCEEEB;
+     width: 100%;
+     height: 100vh;
+ }
+
+#what{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+#projects{
+    background-color: palevioletred;
+    width: 100%;
+    height: 100vh;
+}
+
+#contacts{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+/* structure */
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    padding: 1vh 0;
+    background: rgba(0, 85, 79, 0.8);
+    transition: 0.35s all ease;
+}
+
+.brand{
+    display: inline-block;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.brand img{
+    height: 100%;
+    transition: 0.35s all ease;
+}
+
+.brand_name{
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: top;
+    line-height: 10vh;
+}
+
+.navLinks{
+    margin-right: 5%;
+    line-height: 10vh;
+    display: inline-block;
+    float: right;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.navigation ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navigation ul a:hover{
+    color: #33BAB1;
+    padding: .25em 0 ;
+    border-bottom: solid .15em #33BAB1;
+}
+
+/* NAVIGATION SCROLL*
+* updates navigation bar height*/
+.scrolled{
+    height: 5vh;
+    transition: 0.35s all ease;
+}
+
+/* update navigation bar line height for nav links*/
+.navLinks_scrolled{
+    line-height: 5vh;
+}
+
+/* update navigation bar line height for brand name*/
+.brand_name_scrolled{
+    line-height: 5vh;
+}
+
+.scrollNotification{
+    position: absolute;
+    width: 100%;
+    bottom: 4%;
+    text-align: center;
+    font-size: 4em;
+}
+
+.fa-hand-pointer-o{
+    margin-right: .5%;
+    color: #007F76;
+
+}
+
+.fa-hand-pointer-o{
+    padding: 0 1% 0 0;
+    /* animation for blinking */
+    animation-name: pulsing-arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulsing-arrow; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+}
+
+@keyframes pulsing-arrow {
+    50% {opacity: 0;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pulsing-arrow{
+    50% {opacity: 0;}
+}
