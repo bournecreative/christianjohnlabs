@@ -24,10 +24,10 @@ function navScroller(){
 function scrollPointer() {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 500) {
-      $('.fa-hand-pointer-o').fadeOut();
+      $('.fa-chevron-down').fadeOut();
       console.log('scroll happened');
     }else{
-      $('.fa-hand-pointer-o').fadeIn();
+      $('.fa-chevron-down').fadeIn();
     }
   })
 }
