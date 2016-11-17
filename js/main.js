@@ -1,6 +1,7 @@
 $(document).ready(function(){
   navScroller();
   scrollPointer();
+  fadeCover();
 });
 
 function navScroller(){
@@ -32,10 +33,13 @@ function scrollPointer() {
   })
 }
 
-
-
-
-
+function fadeCover() {
+  $('.cover').mouseover(function () {
+    $(this).fadeOut();
+  }).mouseout(function(){
+    $(this).fadeIn(5000);
+  })
+}
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
