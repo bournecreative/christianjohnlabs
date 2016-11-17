@@ -65,6 +65,7 @@ html, body{
     padding: 1vh 0;
     background: rgba(76, 186, 177, 0.8);
     transition: 0.35s all ease;
+    z-index: 2;
 }
 
 .brand{
@@ -219,6 +220,9 @@ html, body{
     padding: 2% 15%;
 }
 
+.col_50 > img {
+    width: 20%;
+}
 .col_50 {
     display: inline-block;
     text-align: center;
@@ -230,6 +234,7 @@ html, body{
 }
 
 /* WHAT content */
+
 .col_50_image_container{
     display: inline-block;
     vertical-align: top;
