@@ -34,7 +34,7 @@ function scrollPointer() {
 }
 
 function fadeCover() {
-  $('.cover').mouseover(function () {
+  $('.cover').mouseenter(function () {
     $(this).fadeOut();
   }).mouseout(function(){
     $(this).fadeIn(5000);
