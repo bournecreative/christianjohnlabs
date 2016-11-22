@@ -115,6 +115,54 @@
         </div>
       </div>
       <div class="col_50_full_height">
+        <code class="language_js">
+          <span class="js_comments">
+          /***************************************************************
+          getData - see getStudDataCtrl controller
+          ***************************************************************/
+          </span>
+          <span class="js_varName">self</span>.<span class="function_name"><span class="js_funct_name">getData</span> = </span> <span class="js_base">function</span> () {
+          <span class="js_base">var </span><span class="js_varName">url</span> = <span class="js_varName">self</span>.baseUrl + 'get';
+          <span class="js_base">var </span><span class="js_varName">sendData</span> = {'api_key': self.apiKey};
+          <span class="js_base">var </span><span class="js_varName">defer</span> = <span class="js_parameter">$q</span>.defer();
+
+          <span class="js_varName">self</span>.<span class="js_funct_name">httpRequest</span>(<span class="js_varName">url</span>,<span class="js_varName">sendData</span>).then(<span class="js_base">function</span> (resp) {
+          <span class="js_parameter">$log</span>.<span class="js_funct_name">log</span>("data received", <span class="js_parameter">resp</span>);
+          <span class="js_varName">self</span>.Student_cache = <span class="js_parameter">resp</span>.data.data;
+          <span class="js_varName">defer</span>.resolve(<span class="js_parameter">resp</span>.data.data);
+          }, <span class="js_base">function</span> (<span class="js_parameter">err</span>) {
+          <span class="js_parameter">$log</span>.<span class="js_funct_name">warn</span>('Error:', <span class="js_parameter">err</span>);
+          <span class="js_varName">defer</span>.reject(<span class="js_parameter">err</span>);
+          });
+          <span class="js_base">return</span> <span class="js_varName">defer</span>.promise; <span class="js_comments">//return the promise</span>
+          }; <span class="js_comments">//end getData function</span>
+
+          <span class="js_comments">
+          /***************************************************************
+          addData - see addStudDataCtrl controller
+          ***************************************************************/
+          </span>
+          <span class="js_varName">self</span>.<span class="js_funct_name">addData</span> = <span class="js_base">function</span> (<span class="js_parameter">student_object</span>) {
+          <span class="js_base">var</span> <span class="js_varName">url</span> = self.baseUrl + 'create';
+          <span class="js_base">var</span> <span class="js_varName">sendData</span> = {'api_key': <span class="js_varName">self</span>.apiKey,
+          'name': <span class="js_parameter">student_object</span>.name,
+          'course': <span class="js_parameter">student_object</span>.course,
+          'grade': <span class="js_parameter">student_object</span>.grade
+          };
+          <span class="js_base">var</span> <span class="js_varName">defer</span> = <span class="js_parameter">$q</span>.defer();
+
+          <span class="js_varName">self</span>.httpRequest(<span class="js_varName">url</span>, <span class="js_varName">sendData</span>, <span class="js_parameter">student_object</span>)
+          .then(<span class="js_base">function</span> (<span class="js_parameter">resp</span>) {
+          <span class="js_parameter">$log</span>.<span class="js_funct_name">log</span>("data received", <span class="js_parameter">resp</span>);
+          <span class="js_varName">self</span>.Student_cache.<span class="js_funct_name">push</span>({ 'id': <span class="js_parameter">resp</span>.data.new_id,
+          'name': <span class="js_parameter">student_object</span>.name,
+          'course': <span class="js_parameter">student_object</span>.course,
+          'grade' : parseInt(<span class="js_parameter">student_object</span>.grade)
+          });
+          <span class="js_varName">defer</span>.resolve(<span class="js_parameter">resp</span>);
+          }, <span class="js_base">function</span> (<span class="js_parameter">err</span>) {
+        </code>
+
       </div>
     </section>
 

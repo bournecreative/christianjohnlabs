@@ -230,6 +230,7 @@ html, body{
 
 /***  WHAT content ***/
 
+/* image collage side */
 .col_50_image_container{
     display: inline-block;
     vertical-align: top;
@@ -238,21 +239,26 @@ html, body{
     margin: 0;
 }
 
+/* code side */
 .col_50_full_height{
     display: inline-block;
-    text-align: center;
+    text-align: left;
     width: 50%;
     height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: #1A1A1A;
-
+    background-color: #1d1f21;
+    font-size: initial;
+    overflow: hidden;
 }
+
 .image_row_1{
     display: block;
     width: 100%;
     height:20vh;
 }
+
+/* images collage */
 
 .rogue_image{
     position: relative;
@@ -389,6 +395,38 @@ html, body{
     top: 0;
     left: 0;
     background: rgba(179, 179, 179, 0.5);
+}
+
+/* code section */
+
+.language_js{
+    display: block;
+    padding: 0 2%;
+    white-space: pre-line;
+    color: #ffffff;
+    line-height: 1.2em;
+    font-size: 1em;
+    font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+}
+
+.js_comments{
+    color: #77766d;
+}
+
+.js_varName{
+    color: #51c8d0;
+}
+
+.js_funct_name{
+    color: #8bc34a;
+}
+
+.js_base{
+   color: #a43d5a;
+}
+
+.js_parameter{
+    color: #b86f23;
 }
 
 
