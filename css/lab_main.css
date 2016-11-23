@@ -172,6 +172,7 @@ html, body{
     line-height: 1.5em;
     text-align: center;
 }
+/* text */
 
 .main_heading{
     font-size: 2em;
@@ -179,8 +180,27 @@ html, body{
 }
 
 .sub_heading{
-    font-weight: 500;
     font-size: 1.5em;
+    font-weight: 500;
+}
+
+.std_text{
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 2% 20%;
+    font-family: 'Oswald', sans-serif;
+    color: #4CBAB1;
+    text-align: justify;
+}
+
+.interest_text{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #4CBAB1;
+    padding: 2% 10% 10% 10%;
+    font-family: 'Heebo', sans-serif;
+
 }
 
 .work_computer{
@@ -212,18 +232,6 @@ html, body{
     width: 30%;
 }
 
-.col_100 > h2, .col_50 > h2{
-    color: #4d4d4d;
-}
-
-.col_100 > p, .col_50 > p{
-    font-family: 'Heebo', sans-serif;
-    padding: 2% 10%;
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #4d4d4d;
-}
-
 .col_50 > img {
     width: 30%;
 }
@@ -243,21 +251,34 @@ html, body{
 }
 
 /***  WHAT content ***/
+#what h2, p{
+    margin: 0;
+}
 
 .what_intro{
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-    font-size: initial;
-    text-align: center;
     background-color: #00a99d;
+    text-align: center;
 }
 
-.what_intro > p{
-    padding: 5% 20%;
+.what_heading{
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 5% 20% 0 20%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     color: #ffffff;
-    font-size: 1.5em;
+    text-align: center;
 }
+
+.what_text{
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 1% 15% 5% 15%;
+    font-family: 'Heebo', sans-serif;
+}
+
+
 
 .frame:before{
     content: "";
