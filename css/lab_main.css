@@ -46,7 +46,7 @@ html, body{
     transition: 0.35s all ease;
 }
 
-.brand_name{
+.brand_text{
     display: inline-block;
     margin-right: 5%;
     vertical-align: top;
@@ -98,7 +98,7 @@ html, body{
 }
 
 /* update navigation bar line height for brand name*/
-.brand_name_scrolled{
+.brand_text_scrolled{
     line-height: 5vh;
 }
 
@@ -205,30 +205,73 @@ html, body{
     font-size: initial;
 }
 
-.col_100 > p, .col_50 > p{
-    padding: 2% 15%;
-}
-
-.col_50 > img {
-    width: 20%;
-}
 .col_50 {
     display: inline-block;
     text-align: center;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    font-size: initial;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.col_100 > h2, .col_50 > h2{
+    color: #4d4d4d;
+}
+
+.col_100 > p, .col_50 > p{
+    font-family: 'Heebo', sans-serif;
+    padding: 2% 10%;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #4d4d4d;
+}
+
+.col_50 > img {
+    width: 30%;
 }
 
 /***  WHAT page ***/
 
-#what{
+#what {
     width: 100%;
     height: 100%;
 }
 
+.frame{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
 /***  WHAT content ***/
+
+.what_intro{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    font-size: initial;
+    text-align: center;
+    background-color: #00a99d;
+}
+
+.what_intro > p{
+    padding: 5% 20%;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.frame:before{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-color: #00a99d transparent transparent transparent;
+    border-style: solid;
+    border-width: 2vw 2vw 0 2vw ;
+    z-index: 10;
+}
 
 /* image collage side */
 .col_50_image_container{
@@ -237,6 +280,7 @@ html, body{
     width: 50%;
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 
 /* code side */
@@ -250,6 +294,7 @@ html, body{
     background-color: #1d1f21;
     font-size: initial;
     overflow: hidden;
+    z-index: 0;
 }
 
 .image_row_1{
@@ -409,6 +454,10 @@ html, body{
     font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
 }
 
+.js_base{
+    color: #a43d5a;
+}
+
 .js_comments{
     color: #77766d;
 }
@@ -417,18 +466,13 @@ html, body{
     color: #51c8d0;
 }
 
-.js_funct_name{
+.js_functName{
     color: #8bc34a;
-}
-
-.js_base{
-   color: #a43d5a;
 }
 
 .js_parameter{
     color: #b86f23;
 }
-
 
 /***  PROJECTS page ***/
 
@@ -493,5 +537,3 @@ html, body{
     height: 40vh;
 }
 
-.test2{
-}
