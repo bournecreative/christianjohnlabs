@@ -2,6 +2,7 @@ $(document).ready(function(){
   navScroller();
   scrollPointer();
   fadeCover();
+  scrollAnimation();
 });
 
 function navScroller(){
@@ -22,11 +23,22 @@ function navScroller(){
   })
 }
 
+function scrollAnimation(){
+  var whoText = $('#who').offset().top;
+  $(window).scroll(function(){
+    if($(window).scrollTop()>whoText){
+      $('.appear1, .appear2, .appear3, .appear4, .appear5, .appear6, .appear7').addClass('addthis');
+    }else{
+      $('.appear1, .appear2, .appear3, .appear4, .appear5, .appear6, .appear7').removeClass('addthis');
+    }
+  })
+}
+
 function scrollPointer() {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 500) {
       $('.fa-chevron-down').fadeOut();
-      console.log('scroll happened');
+      // console.log('scroll happened');
     }else{
       $('.fa-chevron-down').fadeIn();
     }
@@ -45,7 +57,7 @@ $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top

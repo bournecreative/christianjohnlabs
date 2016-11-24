@@ -2,46 +2,46 @@
 
 ** color-palette color desc | hex | rgb **
 *  white | #ffffff |
-* dark green #00554F
-* white green | #D3EAE9
-* light green | #A5D6D3
-* pastel green | #8FCFD5
-* sea foam green | #7BC8C8
-** main greenish cyan | #4CBAB1
-* green | #00A397
-* darker shade of green | #297C77
-** dark green | #007B73
-* darkest green | #1E403E
+*  dark green #00554F
+*  white green | #D3EAE9
+*  light green | #A5D6D3
+*  pastel green | #8FCFD5
+*  sea foam green | #7BC8C8
+*  main greenish cyan | #4CBAB1
+*  green | #00A397
+*  darker shade of green | #297C77
+*  dark green | #007B73
+*  darkest green | #1E403E
 */
 
 /* global */
-html, body{
+html, body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.display{
+.visibility{
     display: none;
 }
 
 /* Navigation */
-.navigation{
+.navigation {
     position: fixed;
     width: 100%;
     height: 10vh;
     padding: 1vh 0;
-    background: rgba(76, 186, 177, 0.8);
+    background: rgba(0, 169, 157, 0.8);
     transition: 0.35s all ease;
     z-index: 2;
 }
 
-.brand{
+.brand {
     display: inline-block;
     height: 100%;
     margin-left: 5%;
 }
 
-.brand img{
+.brand img {
     height: 100%;
     transition: 0.35s all ease;
 }
@@ -53,14 +53,14 @@ html, body{
     line-height: 10vh;
 }
 
-.navLinks{
+.navLinks {
     margin-right: 5%;
     line-height: 10vh;
     display: inline-block;
     float: right;
 }
 
-.navigation ul{
+.navigation ul {
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -71,23 +71,23 @@ html, body{
     padding: 0 1em;
 }
 
-.navigation ul a{
-    color: white;
+.navigation ul a {
+    color: #cceeeb;
     text-decoration: none;
     font-size: 1.5em;
 }
 
-.navigation ul a:hover{
-    color: #33BAB1;
-    padding: .25em 0 ;
-    border-bottom: solid .15em #33BAB1;
+.navigation ul a:hover {
+    color: #00F5E4;
+    /*padding: .25em 0 ;*/
+    /*border-bottom: solid .15em #B64E8A;*/
 }
 
 /* Navigation SCROLL
 * changes the size of nav elements according to height
 */
 
-.scrolled{
+.scrolled {
     height: 5vh;
     transition: 0.35s all ease;
 }
@@ -98,13 +98,13 @@ html, body{
 }
 
 /* update navigation bar line height for brand name*/
-.brand_text_scrolled{
+.brand_text_scrolled {
     line-height: 5vh;
 }
 
 /***  WELCOME page ***/
 
-#welcome{
+#welcome {
     position: relative;
     background: url("../imgs/lab-1400x760.jpg");
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ html, body{
 
 /***  WELCOME content ***/
 
-.scrollNotification{
+.scrollNotification {
     position: absolute;
     width: 100%;
     height: 20%;
@@ -127,7 +127,7 @@ html, body{
 }
 
 /* Animated Arrow on landing page */
-.fa-chevron-down{
+.fa-chevron-down {
     padding: 0 1.3% 0 0;
     color: #007F76;
     /* animation for moving arrow downward */
@@ -146,15 +146,19 @@ html, body{
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes pulsing-arrow{
+@-webkit-keyframes pulsing-arrow {
     0%{margin-top: 2%}
     60%{margin-top: 5%}
     100%{margin-top: 2%}
 }
 
-/***  WHO page ***/
+/*
+***********************************
+WHO page
+***********************************
+*/
 
-#who{
+#who {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
@@ -162,61 +166,63 @@ html, body{
 
 /***  WHO content ***/
 
+/* Who text */
+
 #who h1 {
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    color: #4CBAB1;
-    padding: 5% 13% 1% 13%;
-    margin: 0;
     font-size: 3em;
     line-height: 1.5em;
+    font-weight: 300;
+    padding: 5% 13% 1% 13%;
+    margin: 0;
+    color: #4CBAB1;
     text-align: center;
 }
-/* text */
 
-.main_heading{
+.main_heading {
     font-size: 2em;
     font-weight: 700;
 }
 
-.sub_heading{
+.sub_heading {
     font-size: 1.5em;
     font-weight: 500;
 }
 
-.std_text{
+.std_text {
+    font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 300;
     line-height: 1.5em;
-    padding: 2% 20%;
-    font-family: 'Oswald', sans-serif;
+    padding: 4% 20%;
     color: #4CBAB1;
     text-align: justify;
 }
 
-.interest_text{
+.interest_text {
+    font-family: 'Heebo', sans-serif;
     font-size: 1em;
     line-height: 1.5em;
+    padding: 10% 10% 10% 10%;
     color: #4CBAB1;
-    padding: 2% 10% 10% 10%;
-    font-family: 'Heebo', sans-serif;
-
 }
 
-.work_computer{
+.work_computer {
     display: block;
     width: 30vw;
     margin: 0 auto;
+    padding: 2vh 0 ;
 }
 
-.container{
+/* container for inline  containers - col_50, col_100 */
+.container {
     width: 100%;
     margin: 0;
     padding: 0;
     font-size: 0;
 }
 
-.col_100{
+.col_100 {
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -225,18 +231,160 @@ html, body{
     font-size: initial;
 }
 
-.col_50 {
+.col_30 {
     display: inline-block;
     text-align: center;
-    box-sizing: border-box;
     width: 30%;
+    vertical-align: top; /* prevent 2nd column from falling out of place */
 }
 
-.col_50 > img {
-    width: 30%;
+/* Responsive Who element box */
+.element_box {
+    position: relative;
+    width: 15vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #00A89C;
 }
 
-/***  WHAT page ***/
+.element_box:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+/* centers element within element box */
+.center_content {
+    position:  absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.center_content div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.center_content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* element text  */
+.ele_desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    color: #ffffff;
+}
+
+.ele_Num{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: #ffffff;
+}
+
+/* caption area */
+.caption {
+    position: absolute;
+    width: 100%;
+    height: 3vh;
+    padding: 1vw;
+    left: 0;
+    bottom: 0;
+    /*background: rgba(255,255,255, 1);*/
+    background: rgba(211,234,233, 0.5);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+/* caption formatting */
+.caption p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    left: 1vw;
+    color: #333333;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+}
+
+/*Hover effect for Photography */
+.photo_ele:hover{
+    background: url("../imgs/photography.png") no-repeat;
+    background-color: #4cbab1;
+    background-size: contain;
+}
+
+/* Hide Element descriptions */
+.photo_ele:hover .center_content h2,
+.photo_ele:hover .ele_desc,
+.photo_ele:hover .ele_Num {
+    display: none;
+}
+
+/* move caption box into view on hover */
+.photo_ele:hover .caption,
+.photo_ele:hover .caption p{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* delay text from rising into view with caption box */
+.photo_ele:hover .caption p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+/*Hover effect for Graphic Design */
+.graphic_ele:hover{
+    background: url("../imgs/penTool.png") no-repeat;
+    background-color: #4cbab1;
+    background-size: contain;
+}
+
+/* Hide Element descriptions */
+.graphic_ele:hover .center_content h2,
+.graphic_ele:hover .ele_desc,
+.graphic_ele:hover .ele_Num {
+    display: none;
+}
+
+/* move caption box into view on hover */
+.graphic_ele:hover .caption,
+.graphic_ele:hover .caption p{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* delay text from rising into view with caption box */
+.graphic_ele:hover .caption p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+/*
+***********************************
+WHAT page
+***********************************
+*/
 
 #what {
     width: 100%;
@@ -277,8 +425,6 @@ html, body{
     padding: 1% 15% 5% 15%;
     font-family: 'Heebo', sans-serif;
 }
-
-
 
 .frame:before{
     content: "";
@@ -495,7 +641,11 @@ html, body{
     color: #b86f23;
 }
 
-/***  PROJECTS page ***/
+/*
+***********************************
+PROJECTS page
+***********************************
+*/
 
 #projects{
     background-color: #CCEEEB;
@@ -540,7 +690,11 @@ html, body{
     left: 25vw;
 }
 
-/***  PROJECTS page ***/
+/*
+***********************************
+LOCATION page
+***********************************
+*/
 
 #contacts{
     background-color: aqua;
@@ -558,3 +712,111 @@ html, body{
     height: 40vh;
 }
 
+.skills_group{
+    text-align: center;
+}
+
+.appear1{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/dataBase_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.appear2{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/angular_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+.appear3{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/html5_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.appear4{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/js_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .4s ease-in-out;
+    transform: scale(0);
+
+}
+.appear5{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/jQuery_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.appear6{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/gitHub_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.appear7{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/css_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.appear:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.addthis{
+    transform: scale(1);
+
+}
