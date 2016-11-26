@@ -27,9 +27,9 @@ function scrollAnimation(){
   var whoText = $('#who').offset().top;
   $(window).scroll(function(){
     if($(window).scrollTop()>whoText){
-      $('.appear1, .appear2, .appear3, .appear4, .appear5, .appear6, .appear7').addClass('addthis');
+      $('.skill_1, .skill_2, .skill_3, .skill_4, .skill_5, .skill_6, .skill_7').addClass('scale_object');
     }else{
-      $('.appear1, .appear2, .appear3, .appear4, .appear5, .appear6, .appear7').removeClass('addthis');
+      $('.skill_1, .skill_2, .skill_3, .skill_4, .skill_5, .skill_6, .skill_7').removeClass('scale_object');
     }
   })
 }

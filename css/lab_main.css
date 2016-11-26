@@ -206,6 +206,115 @@ WHO page
     padding: 10% 10% 10% 10%;
     color: #4CBAB1;
 }
+/* animations for web skills to scale beyon*/
+
+.skills_group{
+    text-align: center;
+}
+
+.skill_1{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/dataBase_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.skill_2{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/angular_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+.skill_3{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/html5_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.skill_4{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/js_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .4s ease-in-out;
+    transform: scale(0);
+
+}
+.skill_5{
+    display: inline-block;
+    padding: 0 10px;
+    width: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/jQuery_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.skill_6{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/gitHub_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.skill_7{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    width: 5vw;
+    overflow: hidden;
+    background: url(../imgs/css_single_icon.png) no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.skill:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.scale_object{
+    transform: scale(1);
+}
 
 .work_computer {
     display: block;
@@ -648,47 +757,47 @@ PROJECTS page
 */
 
 #projects{
-    background-color: #CCEEEB;
+    background-color: #ffffff;
     width: 100%;
     height: 100vh;
 }
 
 /* PROJECTS content */
 
-#elements_table{
-    bottom: 0;
-    display: table;
-    margin: 0 auto;
-}
+/*#elements_table{*/
+    /*bottom: 0;*/
+    /*display: table;*/
+    /*margin: 0 auto;*/
+/*}*/
 
-.row{
-    display: table-row;
-}
+/*.row{*/
+    /*display: table-row;*/
+/*}*/
 
-.column{
-    display: table-cell;
-}
+/*.column{*/
+    /*display: table-cell;*/
+/*}*/
 
-.element{
-    width: 12vw;
-    background-color: #00A89C;
-    margin: .25vw;
-}
+/*.element{*/
+    /*width: 12vw;*/
+    /*background-color: #00A89C;*/
+    /*margin: .25vw;*/
+/*}*/
 
-.element:after{
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-}
+/*.element:after{*/
+    /*content: '';*/
+    /*display: block;*/
+    /*padding-bottom: 100%;*/
+/*}*/
 
-.element:hover{
-    background-color: #33BAB1;
-}
+/*.element:hover{*/
+    /*background-color: #33BAB1;*/
+/*}*/
 
-.last{
-    position: relative;
-    left: 25vw;
-}
+/*.last{*/
+    /*position: relative;*/
+    /*left: 25vw;*/
+/*}*/
 
 /*
 ***********************************
@@ -696,127 +805,22 @@ LOCATION page
 ***********************************
 */
 
-#contacts{
+#location{
     background-color: aqua;
     width: 100%;
-    height: 100vh;
 }
 
+#map{
+    width: 100%;
+    height: 50vh;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #8FCFD5;
+}
 /***  PROJECTS content ***/
 
-.test{
-    background: url("../imgs/test.png") no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 40vh;
-}
 
-.skills_group{
-    text-align: center;
-}
 
-.appear1{
-    display: inline-block;
-    padding: 0 10px;
-    width: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: url(../imgs/dataBase_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-
-.appear2{
-    display: inline-block;
-    padding: 0 10px;
-    width: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: url(../imgs/angular_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
-}
-.appear3{
-    display: inline-block;
-    padding: 0 10px;
-    width: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: url(../imgs/html5_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-.appear4{
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
-    width: 5vw;
-    overflow: hidden;
-    background: url(../imgs/js_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .4s ease-in-out;
-    transform: scale(0);
-
-}
-.appear5{
-    display: inline-block;
-    padding: 0 10px;
-    width: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: url(../imgs/jQuery_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.appear6{
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
-    width: 5vw;
-    overflow: hidden;
-    background: url(../imgs/gitHub_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
-}
-
-.appear7{
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
-    width: 5vw;
-    overflow: hidden;
-    background: url(../imgs/css_single_icon.png) no-repeat;
-    background-size: contain;
-    transition: all .5s ease-in-out;
-    transform: scale(0);
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-
-.appear:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-.addthis{
-    transform: scale(1);
-
-}
