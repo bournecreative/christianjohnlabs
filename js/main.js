@@ -3,7 +3,9 @@ $(document).ready(function(){
   scrollPointer();
   fadeCover();
   scrollAnimation();
+  navHighLighter();
 });
+
 
 function navScroller(){
   $(window).scroll(function(){
@@ -34,6 +36,35 @@ function scrollAnimation(){
   })
 }
 
+function navHighLighter(){
+  var who = $('#who').offset().top;
+  var what = $('#what').offset().top;
+  var projects = $('#projects').offset().top;
+  var connect = $('#connect').offset().top;
+  
+  $(window).on('scroll', function(){
+    if($(window).scrollTop()>=who && $(window).scrollTop()<what-50) {
+      $('.who').addClass('nav_link_highlight');
+    }else{
+      $('.who').removeClass('nav_link_highlight');
+    }
+    if($(window).scrollTop()>=what-50 && $(window).scrollTop()<projects-50) {
+      $('.what').addClass('nav_link_highlight');
+    }else{
+      $('.what').removeClass('nav_link_highlight');
+    }
+    if($(window).scrollTop()>=projects-50 && $(window).scrollTop()<connect-100) {
+      $('.projects').addClass('nav_link_highlight');
+    }else{
+      $('.projects').removeClass('nav_link_highlight');
+    }
+    if($(window).scrollTop()>connect-100) {
+      $('.connect').addClass('nav_link_highlight');
+    }else{
+      $('.connect').removeClass('nav_link_highlight');
+    }
+  })
+}
 function scrollPointer() {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 500) {

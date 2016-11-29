@@ -1,21 +1,21 @@
 /* main styles for christianjohnlabs.com
 
 ** color-palette color desc | hex | rgb **
-*  white | #ffffff |
-*  dark green #00554F
-*  white green | #D3EAE9
-*  light green | #A5D6D3
-*  pastel green | #8FCFD5
-*  sea foam green | #7BC8C8
-*  main greenish cyan | #4CBAB1
-*  green | #00A397
-*  darker shade of green | #297C77
-*  dark green | #007B73
-*  darkest green | #1E403E
+
+*  white green | #cceeeb | r-204 g-238 b-235
+*  pastel green | #99ddd8 | r-153 g-221 b-216
+*  sea foam green | #66cbc4 | r-102 g-203 b-196
+
+*  light greenish cyan | #33bab1 | r-51 g-186 b-177
+
+*  greenish cyan | #00a99d | r-0 g-169 b-157
+*  darker shade | #007f76 | r-0 g-127 b-118
+*  darker | #00554f | r-0 g-85 b-79
+*  darkest | #002a27 | r-0 g-42 b-39
 */
 
 /* global */
-html, body {
+html, body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -25,23 +25,23 @@ html, body {
 }
 
 /* Navigation */
-.navigation {
+.navigation{
     position: fixed;
     width: 100%;
     height: 10vh;
     padding: 1vh 0;
     background: rgba(0, 169, 157, 0.8);
     transition: 0.35s all ease;
-    z-index: 2;
+    z-index: 5;
 }
 
-.brand {
+.brand{
     display: inline-block;
     height: 100%;
     margin-left: 5%;
 }
 
-.brand img {
+.brand img{
     height: 100%;
     transition: 0.35s all ease;
 }
@@ -53,58 +53,64 @@ html, body {
     line-height: 10vh;
 }
 
-.navLinks {
+.navLinks{
     margin-right: 5%;
     line-height: 10vh;
     display: inline-block;
     float: right;
 }
 
-.navigation ul {
+.navigation ul{
     margin: 0;
     padding: 0;
     white-space: nowrap;
 }
 
-.navigation li {
+.navigation li{
     display: inline-block;
     padding: 0 1em;
 }
 
-.navigation ul a {
+.navigation ul a{
     color: #cceeeb;
     text-decoration: none;
     font-size: 1.5em;
+    padding-bottom: .10vh;
 }
 
-.navigation ul a:hover {
-    color: #00F5E4;
+.nav_link_highlight{
+    border-bottom: .5vh solid #C544B4;
+}
+
+.navigation ul a:hover{
+    color: #C544B4;
     /*padding: .25em 0 ;*/
     /*border-bottom: solid .15em #B64E8A;*/
 }
+
 
 /* Navigation SCROLL
 * changes the size of nav elements according to height
 */
 
-.scrolled {
+.scrolled{
     height: 5vh;
     transition: 0.35s all ease;
 }
 
 /* update navigation bar line height for nav links*/
-.navLinks_scrolled{
+.navLinks_scrolled {
     line-height: 5vh;
 }
 
 /* update navigation bar line height for brand name*/
-.brand_text_scrolled {
+.brand_text_scrolled{
     line-height: 5vh;
 }
 
 /***  WELCOME page ***/
 
-#welcome {
+#welcome{
     position: relative;
     background: url("../imgs/lab-1400x760.jpg");
     background-repeat: no-repeat;
@@ -117,7 +123,7 @@ html, body {
 
 /***  WELCOME content ***/
 
-.scrollNotification {
+.scrollNotification{
     position: absolute;
     width: 100%;
     height: 20%;
@@ -127,9 +133,9 @@ html, body {
 }
 
 /* Animated Arrow on landing page */
-.fa-chevron-down {
+.fa-chevron-down{
     padding: 0 1.3% 0 0;
-    color: #007F76;
+    color: #007f76;
     /* animation for moving arrow downward */
     animation-name: pulsing-arrow;
     animation-duration: 1.5s;
@@ -139,14 +145,14 @@ html, body {
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
 }
 
-@keyframes pulsing-arrow {
+@keyframes pulsing-arrow{
     0%{margin-top: 2%}
     60%{margin-top: 5%}
     100%{margin-top: 2%}
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes pulsing-arrow {
+@-webkit-keyframes pulsing-arrow{
     0%{margin-top: 2%}
     60%{margin-top: 5%}
     100%{margin-top: 2%}
@@ -158,7 +164,7 @@ WHO page
 ***********************************
 */
 
-#who {
+#who{
     background-color: #ffffff;
     width: 100%;
     height: 100%;
@@ -168,45 +174,45 @@ WHO page
 
 /* Who text */
 
-#who h1 {
+#who h1{
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     line-height: 1.5em;
     font-weight: 300;
     padding: 5% 13% 1% 13%;
     margin: 0;
-    color: #4CBAB1;
+    color: #33bab1;
     text-align: center;
 }
 
-.main_heading {
+.main_heading{
     font-size: 2em;
     font-weight: 700;
 }
 
-.sub_heading {
+.sub_heading{
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.std_text {
+.std_text{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 300;
     line-height: 1.5em;
-    padding: 4% 20%;
-    color: #4CBAB1;
+    padding: 2% 20% 4% 20%;
+    color: #33bab1;
     text-align: justify;
 }
 
-.interest_text {
+.interest_text{
     font-family: 'Heebo', sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     padding: 10% 10% 10% 10%;
-    color: #4CBAB1;
+    color: #33bab1;
 }
-/* animations for web skills to scale beyon*/
+/* animations for web skills to scale beyond set scroll marker */
 
 .skills_group{
     text-align: center;
@@ -262,8 +268,8 @@ WHO page
     background-size: contain;
     transition: all .4s ease-in-out;
     transform: scale(0);
-
 }
+
 .skill_5{
     display: inline-block;
     padding: 0 10px;
@@ -306,7 +312,7 @@ WHO page
     transition-delay: 0.5s;
 }
 
-.skill:before {
+.skill:before{
     content: "";
     display: block;
     padding-top: 100%;
@@ -316,7 +322,7 @@ WHO page
     transform: scale(1);
 }
 
-.work_computer {
+.work_computer{
     display: block;
     width: 30vw;
     margin: 0 auto;
@@ -324,14 +330,14 @@ WHO page
 }
 
 /* container for inline  containers - col_50, col_100 */
-.container {
+.container{
     width: 100%;
     margin: 0;
     padding: 0;
     font-size: 0;
 }
 
-.col_100 {
+.col_100{
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -340,7 +346,7 @@ WHO page
     font-size: initial;
 }
 
-.col_30 {
+.col_30{
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -348,22 +354,22 @@ WHO page
 }
 
 /* Responsive Who element box */
-.element_box {
+.element_box{
     position: relative;
     width: 15vw;
     margin: 0 auto;
     overflow: hidden;
-    background: #00A89C;
+    background: #00a99d;
 }
 
-.element_box:before {
+.element_box:before{
     content: "";
     display: block;
     padding-top: 100%;
 }
 
 /* centers element within element box */
-.center_content {
+.center_content{
     position:  absolute;
     top: 0;
     right: 0;
@@ -371,13 +377,13 @@ WHO page
     left: 0;
 }
 
-.center_content div {
+.center_content div{
     display: table;
     width: 100%;
     height: 100%;
 }
 
-.center_content h2 {
+.center_content h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 5vw;
     display: table-cell;
@@ -387,7 +393,7 @@ WHO page
 }
 
 /* element text  */
-.ele_desc {
+.ele_desc{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5vw;
     position: absolute;
@@ -407,15 +413,14 @@ WHO page
 }
 
 /* caption area */
-.caption {
+.caption{
     position: absolute;
     width: 100%;
     height: 3vh;
     padding: 1vw;
     left: 0;
     bottom: 0;
-    /*background: rgba(255,255,255, 1);*/
-    background: rgba(211,234,233, 0.5);
+    background: rgba(204,238,235, 0.5);
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,100%,0);
@@ -423,29 +428,40 @@ WHO page
 }
 
 /* caption formatting */
-.caption p {
+.caption p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    font-weight: 700;
     position: absolute;
-    left: 1vw;
-    color: #333333;
+    left: .5vw;
+    margin: 0;
+    color: #1d1f21;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, 200%, 0);
     transform: translate3d(0, 200%, 0);
 }
 
-/*Hover effect for Photography */
+.caption a{
+    color: #1d1f21;
+}
+
+.caption a:hover{
+    color: #C544B4;
+}
+
+    /* Hover effect for Photography */
 .photo_ele:hover{
     background: url("../imgs/photography.png") no-repeat;
-    background-color: #4cbab1;
+    background-color: #66cbc4;
     background-size: contain;
 }
 
 /* Hide Element descriptions */
 .photo_ele:hover .center_content h2,
 .photo_ele:hover .ele_desc,
-.photo_ele:hover .ele_Num {
+.photo_ele:hover .ele_Num{
     display: none;
 }
 
@@ -457,7 +473,7 @@ WHO page
 }
 
 /* delay text from rising into view with caption box */
-.photo_ele:hover .caption p {
+.photo_ele:hover .caption p{
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
@@ -465,14 +481,14 @@ WHO page
 /*Hover effect for Graphic Design */
 .graphic_ele:hover{
     background: url("../imgs/penTool.png") no-repeat;
-    background-color: #4cbab1;
+    background-color: #66cbc4;
     background-size: contain;
 }
 
 /* Hide Element descriptions */
 .graphic_ele:hover .center_content h2,
 .graphic_ele:hover .ele_desc,
-.graphic_ele:hover .ele_Num {
+.graphic_ele:hover .ele_Num{
     display: none;
 }
 
@@ -484,7 +500,7 @@ WHO page
 }
 
 /* delay text from rising into view with caption box */
-.graphic_ele:hover .caption p {
+.graphic_ele:hover .caption p{
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
@@ -495,12 +511,12 @@ WHAT page
 ***********************************
 */
 
-#what {
+#what{
     width: 100%;
     height: 100%;
 }
 
-.frame{
+.rel_container{
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -508,34 +524,42 @@ WHAT page
 }
 
 /***  WHAT content ***/
-#what h2, p{
-    margin: 0;
-}
 
 .what_intro{
-    background-color: #00a99d;
+    background-color: #33bab1;
     text-align: center;
 }
 
 .what_heading{
-    font-size: 2em;
-    line-height: 1.5em;
-    padding: 5% 20% 0 20%;
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 4% 20% 0 20%;
     color: #ffffff;
     text-align: center;
 }
 
-.what_text{
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 1.5em;
-    padding: 1% 15% 5% 15%;
+.what_intro p{
     font-family: 'Heebo', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
 }
 
-.frame:before{
+.what_closing{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 4%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.rel_container:before{
     content: "";
     position: absolute;
     margin: 0 auto;
@@ -543,7 +567,7 @@ WHAT page
     right: 0;
     width: 0;
     height: 0;
-    border-color: #00a99d transparent transparent transparent;
+    border-color: #33bab1 transparent transparent transparent;
     border-style: solid;
     border-width: 2vw 2vw 0 2vw ;
     z-index: 10;
@@ -560,7 +584,7 @@ WHAT page
 }
 
 /* code side */
-.col_50_full_height{
+.col_50_code_container{
     display: inline-block;
     text-align: left;
     width: 50%;
@@ -600,7 +624,7 @@ WHAT page
     background: url("../imgs/cjlabs-logo.png") no-repeat;
     background-size: 95%;
     background-position: center;
-    background-color: #00a7c4;
+    background-color: #66cbc4;
     overflow: hidden;
 }
 
@@ -755,72 +779,172 @@ WHAT page
 PROJECTS page
 ***********************************
 */
-
 #projects{
-    background-color: #ffffff;
-    width: 100%;
-    height: 100vh;
+    background-color: #33bab1;
+    height: 100%;
+    padding: 3% 0 2% 0;
+}
+
+.col_70{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.col_20{
+    display: inline-block;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.col_80{
+    display: inline-block;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
 }
 
 /* PROJECTS content */
 
-/*#elements_table{*/
-    /*bottom: 0;*/
-    /*display: table;*/
-    /*margin: 0 auto;*/
-/*}*/
+.web_app_details{
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 2%;
+}
 
-/*.row{*/
-    /*display: table-row;*/
-/*}*/
+.web_app_details h2,
+.web_app_details p{
+    margin: 0;
 
-/*.column{*/
-    /*display: table-cell;*/
-/*}*/
+}
 
-/*.element{*/
-    /*width: 12vw;*/
-    /*background-color: #00A89C;*/
-    /*margin: .25vw;*/
-/*}*/
+.web_app_name{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 2% 0;
+}
 
-/*.element:after{*/
-    /*content: '';*/
-    /*display: block;*/
-    /*padding-bottom: 100%;*/
-/*}*/
+.web_app_desc,
+.web_app_tech{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1em;
+}
 
-/*.element:hover{*/
-    /*background-color: #33BAB1;*/
-/*}*/
+/* Responsive Who element box */
+.web_app_frame{
+    width: 6vw;
+    overflow: hidden;
+    background: #00A89C;
+    margin: 0 auto;
+    border: .5vw #33bab1 solid;
+    box-sizing: border-box;
 
-/*.last{*/
-    /*position: relative;*/
-    /*left: 25vw;*/
-/*}*/
+}
+
+.web_app_frame:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.web_app_highlight{
+    width: 27vw;
+    overflow: hidden;
+    background: #00A89C;
+}
+
+.web_app_highlight:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
 
 /*
 ***********************************
-LOCATION page
+CONNECT page
 ***********************************
 */
 
-#location{
-    background-color: aqua;
+#connect{
     width: 100%;
+    background-color: #33bab1;
 }
 
+/* CONNECT content */
+
 #map{
+    position: relative;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
 }
+
+.conn_text_area{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+
+.connect_title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    color: #C544B4;
+    z-index: 3;
+}
+/*
+***********************************
+Footer
+***********************************
+*/
 
 footer{
     width: 100%;
-    height: 10vh;
-    background-color: #8FCFD5;
+    height: 15vh;
+    background-color: #007f76;
 }
-/***  PROJECTS content ***/
 
+.col_70_footer{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
 
+/* FOOTER content */
 
+.connection_links{
+    text-align: center;
+}
+
+.connection_links ul{
+    padding: 0;
+}
+
+.connection_link{
+    display: inline-block;
+    font-size: initial;
+    padding: 0 2%;
+}
+
+.connection_link a{
+    padding: 0;
+    font-size: 4em;
+    line-height: 15vh;
+    color: #ffffff;
+}
+
+.connection_link a:hover{
+    color: #c544b4;
+}

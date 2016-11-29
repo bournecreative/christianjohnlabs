@@ -15,22 +15,25 @@
 </head>
 <body>
 <div class="wrapper">
+  <!-----------------
+  * WELCOME SECTION *
+  ------------------>
   <section id="welcome">
     <header class="navigation">
       <section class="brand">
-        <img src="imgs/cjlabs-logo.png">
+        <a href="#welcome"><img src="imgs/cjlabs-logo.png"></a>
       </section>
       <section class="brand_text">
         <ul>
-          <li class="page-scroll"><a href="#welcome">Christian John Labs</a></li>
+          <!--<li class="page-scroll"><a href="#welcome">Christian John Labs</a></li>-->
         </ul>
       </section>
       <section class="navLinks">
         <ul>
-          <li class="page-scroll"><a href="#who">who</a></li>
-          <li class="page-scroll"><a href="#what">what</a></li>
-          <li class="page-scroll"><a href="#projects">projects</a></li>
-          <li class="page-scroll"><a href="#location">contact</a></li>
+          <li class="page-scroll"><a class='who' href="#who">who</a></li>
+          <li class="page-scroll"><a class='what' href="#what">what</a></li>
+          <li class="page-scroll"><a class='projects' href="#projects">projects</a></li>
+          <li class="page-scroll"><a class='connect' href="#connect">connect</a></li>
         </ul>
       </section>
     </header>
@@ -39,21 +42,19 @@
     </section>
   </section>
   <section id="who">
-      <h1><span class="main_heading">Hi</span><br><span class="sub_heading">I’m Christian John Gonzalez</span> <br>I’m a web developer that cares about how<br>digital products work and
-        how they look.
-      </h1>
-      <section>
-        <section class="skills_group">
-          <div class="skill skill_1"></div>
-          <div class="skill skill_2"></div>
-          <div class="skill skill_3"></div>
-          <div class="skill skill_4"></div>
-          <div class="skill skill_5"></div>
-          <div class="skill skill_6"></div>
-          <div class="skill skill_7"></div>
-        </section>
-        <img class="work_computer" src="imgs/work-computer.png" alt="computer graphic showing code editor and web browser open on screen">
-      </section>
+    <h1><span class="main_heading">Hi</span><br><span class="sub_heading">I’m Christian John Gonzalez</span> <br>I’m a web developer that cares about how<br>digital products work and
+      how they look.
+    </h1>
+    <section class="skills_group">
+      <div class="skill skill_1"></div>
+      <div class="skill skill_2"></div>
+      <div class="skill skill_3"></div>
+      <div class="skill skill_4"></div>
+      <div class="skill skill_5"></div>
+      <div class="skill skill_6"></div>
+      <div class="skill skill_7"></div>
+    </section>
+    <img class="work_computer" src="imgs/work-computer.png" alt="computer graphic showing code editor and web browser open on screen">
     <div class="container">
       <div class="col_100">
         <p class="std_text">This portfolio is my creative space, an effort to share a little bit about me and the skills I have. Aside from coding, I also share interests in other fields that have inherently attributed to my capabilities as a developer.</p>
@@ -67,7 +68,7 @@
             <p class="ele_desc">Photography</p>
             <p class="ele_Num">20</p>
             <div class="caption">
-              <p>find me on flickr</p>
+              <p>find me on flickr <a href="https://www.flickr.com/photos/136003097@N03/"><i class="fa fa-flickr" aria-hidden="true"></i></a></p>
             </div>
           </div>
           <p class="interest_text">My curiosity lead me into photography a few years ago, opening a whole new world to me. I dove in and have since enjoyed the hobby of capturing snippets of time. The challenge of building compositions with light and shapes continues to exercise my creativity and visual design skills.</p>
@@ -80,7 +81,7 @@
             <p class="ele_desc">Graphic Design</p>
             <p class="ele_Num">90</p>
             <div class="caption">
-              <p>find me on Behance</p>
+              <p>find me on Behance <a href="https://www.behance.net/ChristianJohn"><i class="fa fa-behance" aria-hidden="true"></i></a></p>
             </div>
           </div>
           <p class="interest_text">The ability to visually express an idea or concept is a form of storytelling that has always captivated me. Consequently, my interest in graphic design has bolstered my capacity as a web developer as I am capable and familiar with current approaches in web design and UX.</p>
@@ -88,15 +89,19 @@
       </div>
     </div>
   </section> <!-- end of who section -->
+  <!-----------------
+  * WHAT SECTION *
+  ------------------>
   <section id="what">
     <div class="container">
       <div class="col_100">
         <section class="what_intro">
           <h2 class="what_heading">A web developer that designs a little </h2>
-          <p class="what_text">Being able to develop a concept visually and also be challenged to creatively solve problems is what makes web development so fun. <br>I sit in the middle of design and development.</p>
+          <p class="what_text">Being able to develop a concept visually and also be challenged to creatively solve problems is what makes web development so fun.</p>
+          <h3 class="what_closing">I sit in the middle of design and development.</h3>
         </section>
       </div>
-      <div class="frame">
+      <div class="rel_container">
         <section class="col_50_image_container">
           <div class="image_row_1">
             <div class="rogue_image imgCol">
@@ -137,7 +142,7 @@
             </div>
           </div>
         </section>
-        <section class="col_50_full_height">
+        <section class="col_50_code_container">
           <code class="language_js">
             <span class="js_comments">
             /***************************************************************
@@ -189,50 +194,66 @@
       </div>
     </div>
   </section> <!-- end of what section -->
+  <!-----------------
+  * PROJECT SECTION *
+  ------------------>
   <section id="projects">
-    <h2>Projects</h2>
-    <section class="project_content">
-      <h3 class="project_title">Project Title</h3>
-      <p class="project_description"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <p class="tech">List technologies used</p>
-    </section>
+    <div class="container">
+      <div class="col_70">
+        <div class="col_100">
+          <section class="web_app_details">
+              <section class="web_app_1">
+                <h2 class="web_app_name">Project Title</h2>
+                <p class="web_app_desc"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="web_app_tech">List technologies used</p>
+              </section>
+          </section>
+        </div>
+        <div class="col_20">
+          <div class="web_app_frame"></div>
+          <div class="web_app_frame"></div>
+          <div class="web_app_frame"></div>
+          <div class="web_app_frame"></div>
+          <div class="web_app_frame"></div>
+        </div>
+        <div class="col_80">
+          <div class="web_app_highlight">
+            <div class="web_app_1">
 
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </section>
-
-  <!--<section id="projects">-->
-    <!--<div id="elements_table">-->
-      <!--<div class="row">-->
-        <!--<div class="column">-->
-          <!--<div class="element"></div>-->
-        <!--</div>-->
-        <!--<div class="column">-->
-          <!--<div class="element last"></div>-->
-        <!--</div>-->
-      <!--</div>&lt;!&ndash; end of row &ndash;&gt;-->
-      <!--<div class="row">-->
-        <!--<div class="column">-->
-          <!--<div class="element"></div>-->
-        <!--</div>-->
-        <!--<div class="column">-->
-          <!--<div class="element"></div>-->
-        <!--</div>-->
-        <!--<div class="column">-->
-          <!--<div class="element"></div>-->
-        <!--</div>-->
-        <!--<div class="column">-->
-          <!--<div class="element"></div>-->
-        <!--</div>-->
-      <!--</div> &lt;!&ndash; end row&ndash;&gt;-->
-    <!--</div>-->
-  <!--</section> &lt;!&ndash; end of projects section &ndash;&gt;-->
-
-  <section id="location">
+  <!-----------------
+  * CONNECT SECTION *
+  ------------------>
+  <section id="connect">
+    <div class="conn_text_area">
+      <h2 class="connect_title">Lets Connect</h2>
+    </div>
     <div id="map">
-
     </div>
   </section><!-- end of location section -->
+  <!-----------------
+  * FOOTER *
+  ------------------>
   <footer>
-
+    <div class="container">
+      <div class="col_70_footer">
+        <section class="connection_links">
+          <ul>
+            <li class="connection_link">
+              <a href="https://www.linkedin.com/in/christianJohnGonzalez"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li class="connection_link">
+              <a href="https://github.com/bournecreative"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
   </footer>
 </div> <!-- wrapper -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAarrDZIfltsmQdSORvngh1j3Czy2ROfDw&v=3&callback=initMap"></script>
