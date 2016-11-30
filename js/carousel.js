@@ -49,7 +49,7 @@ function setFrame(){
   //Set slide the current_slide - according to numericial index
   var slide = slides.eq(current_slide);
   slides.hide();
-  slide.css('display','inline-block');
+  slide.css('display','inline-block').animate();
 }
 
 
