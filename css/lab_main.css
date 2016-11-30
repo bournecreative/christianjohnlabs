@@ -779,89 +779,163 @@ WHAT page
 PROJECTS page
 ***********************************
 */
+
 #projects{
     background-color: #33bab1;
     height: 100%;
-    padding: 3% 0 2% 0;
+    padding: 5% 0;
 }
 
-.col_70{
-    display: block;
-    width: 70%;
+.project_carousel{
+    width: 70vw;
+    height: 50vh;
     margin: 0 auto;
-    font-size: 0;
+    overflow: hidden;
 }
 
-.col_20{
-    display: inline-block;
-    width: 20%;
-    padding: 0;
-    margin: 0;
-    font-size: 0;
+.project_slide{
+     text-align: center;
+ }
+
+.project_selectors{
+    text-align: center;
 }
 
-.col_80{
-    display: inline-block;
-    width: 80%;
-    padding: 0;
-    margin: 0;
-    font-size: 0;
-}
-
-/* PROJECTS content */
-
-.web_app_details{
-    text-align: left;
-    color: #ffffff;
-    padding-bottom: 2%;
-}
-
-.web_app_details h2,
-.web_app_details p{
-    margin: 0;
-
-}
-
-.web_app_name{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    padding: 2% 0;
-}
-
-.web_app_desc,
-.web_app_tech{
-    font-family: 'Heebo', sans-serif;
-    font-size: 1em;
-}
+/* PROJECT content */
 
 /* Responsive Who element box */
-.web_app_frame{
-    width: 6vw;
-    overflow: hidden;
-    background: #00A89C;
+.project_element {
+    position: relative;
+    width: 7vw;
     margin: 0 auto;
-    border: .5vw #33bab1 solid;
-    box-sizing: border-box;
-
-}
-
-.web_app_frame:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-.web_app_highlight{
-    width: 27vw;
     overflow: hidden;
-    background: #00A89C;
+    background: #99ddd8;
+    color: #00a99d;
 }
 
-.web_app_highlight:before{
+.project_element:hover{
+    background: #cceeeb;
+}
+
+.project_element:nth-child(2n +2){
+    background: #66cbc4;
+}
+
+.project_element:nth-child(2n +2):hover{
+    background: #007f76;
+}
+
+.project_element:before{
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+.center_content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* element text  */
+.pro_ele_desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7vw;
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    margin: 0;
+}
+
+.pro_ele_Num{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0;
+}
+
+#projects h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.project_selectors{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#projects ul{
+    display: inline-block;
+
+    margin: 5% 0 ;
+    padding: 0;
+
+}
+
+#projects li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.project1{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.project_1_IMG{
+    background: url("../imgs/rogue_fighter.JPG") no-repeat;
+    background-size: contain;
+    height: 50vh;
+    background-position: center;
+}
+
+.project2{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project_2_IMG{
+    background: url("../imgs/SGT_jQuery.JPG") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+}
+
+.project3{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project_3_IMG{
+    background: url("../imgs/SGT_angular.JPG") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+
+}
+
+.project4{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project_4_IMG{
+    background: url("../imgs/JS_calculator.JPG") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
 }
 
 /*

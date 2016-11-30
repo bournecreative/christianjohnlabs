@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="js/main.js"></script>
   <script src="js/map.js"></script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -198,34 +199,79 @@
   * PROJECT SECTION *
   ------------------>
   <section id="projects">
-    <div class="container">
-      <div class="col_70">
-        <div class="col_100">
-          <section class="web_app_details">
-              <section class="web_app_1">
-                <h2 class="web_app_name">Project Title</h2>
-                <p class="web_app_desc"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p class="web_app_tech">List technologies used</p>
-              </section>
+
+        <div class="project_carousel">
+
+          <section class="project_slide project1">
+            <h2>One</h2>
+            <p>Test Text 11111111111111</p>
+            <div class="project_1_IMG"></div>
+          </section>
+
+          <section class="project_slide project2">
+            <h2>Two</h2>
+            <p>Test Text 2222222222222222222</p>
+            <div class="project_2_IMG"></div>
+          </section>
+
+          <section class="project_slide project3">
+            <h2>Three</h2>
+            <p>Test Text 333333333333333333333333333</p>
+            <div class="project_3_IMG"></div>
+          </section>
+
+          <section class="project_slide project4">
+            <h2>Four</h2>
+            <p>Test Text 4444444444444444444</p>
+            <div class="project_4_IMG"></div>
           </section>
         </div>
-        <div class="col_20">
-          <div class="web_app_frame"></div>
-          <div class="web_app_frame"></div>
-          <div class="web_app_frame"></div>
-          <div class="web_app_frame"></div>
-          <div class="web_app_frame"></div>
+        <div class="project_selectors">
+          <ul>
+            <li class="project_element">
+              <div class="center_content">
+                <div><h3>Rf</h3>
+                  <p class="pro_ele_desc">Rogue Fighter</p>
+                  <p class="pro_ele_Num">1</p>
+                </div>
+              </div>
+            </li>
+            <li class="project_element">
+              <div class="center_content">
+                <div><h3>Ag</h3>
+                  <p class="pro_ele_desc">Angular CMS</p>
+                  <p class="pro_ele_Num">2</p>
+                </div>
+              </div>
+            </li>
+            <li class="project_element">
+              <div class="center_content">
+                <div><h3>C</h3>
+                  <p class="pro_ele_desc">JS Calculator</p>
+                  <p class="pro_ele_Num">3</p>
+                </div>
+              </div>
+            </li>
+            <li class="project_element">
+              <div class="center_content">
+                <div><h3>Jg</h3>
+                  <p class="pro_ele_desc">jQuery CMS</p>
+                  <p class="pro_ele_Num">4</p>
+                </div>
+              </div>
+            </li>
+            <li class="project_element">
+              <div class="center_content">
+                <div><h3>?</h3>
+                  <p class="pro_ele_desc">?</p>
+                  <p class="pro_ele_Num">5</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="col_80">
-          <div class="web_app_highlight">
-            <div class="web_app_1">
 
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  </section>
+ </section>
   <!-----------------
   * CONNECT SECTION *
   ------------------>
@@ -257,5 +303,6 @@
   </footer>
 </div> <!-- wrapper -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAarrDZIfltsmQdSORvngh1j3Czy2ROfDw&v=3&callback=initMap"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
