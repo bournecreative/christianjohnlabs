@@ -80,7 +80,7 @@ function fadeCover() {
   $('.cover').mouseenter(function () {
     $(this).fadeOut();
   }).mouseout(function(){
-    $(this).fadeIn(5000);
+    $(this).fadeIn();
   })
 }
 

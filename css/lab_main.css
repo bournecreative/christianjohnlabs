@@ -55,9 +55,10 @@ html, body{
 
 .brand_text{
     display: inline-block;
-    margin-right: 5%;
+    margin-left: 1vw;
     vertical-align: top;
     line-height: 10vh;
+    font-size: 1.5vw;
 }
 
 .navLinks{
@@ -81,7 +82,7 @@ html, body{
 .navigation ul a{
     color: #cceeeb;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     padding-bottom: .10vh;
 }
 
@@ -89,7 +90,7 @@ html, body{
     border-bottom: .5vh solid #C544B4;
 }
 
-.navigation ul a:hover{
+.navLinks ul a:hover{
     color: #C544B4;
 }
 
