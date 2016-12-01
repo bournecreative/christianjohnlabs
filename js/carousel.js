@@ -18,12 +18,12 @@ var slideCount = slides.length-1;
 
 //click handler to update current slide index based on clicked element
 function selectedFrame() {
-  $('#projects li').click(updateFrame);
+  $('.project_selectors li').click(updateFrame);
 }
 
 //Sets the current slide to the index of the numerical correlation of the element clicked
 function updateFrame(){
-  var index = $('#projects li').index(this);
+  var index = $('.project_selectors li').index(this);
   switch (index){
     case 0:
       current_slide = index;

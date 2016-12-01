@@ -30,7 +30,7 @@ html, body{
     width: 100%;
     height: 10vh;
     padding: 1vh 0;
-    background: rgba(0, 169, 157, 0.8);
+    background: rgba(0, 127, 118, 0.8);
     transition: 0.35s all ease;
     z-index: 5;
 }
@@ -44,6 +44,13 @@ html, body{
 .brand img{
     height: 100%;
     transition: 0.35s all ease;
+    transform: scale(1);
+}
+
+.brand img:hover{
+    height: 100%;
+    transition: 0.35s all ease;
+    transform: scale(1.1);
 }
 
 .brand_text{
@@ -84,8 +91,6 @@ html, body{
 
 .navigation ul a:hover{
     color: #C544B4;
-    /*padding: .25em 0 ;*/
-    /*border-bottom: solid .15em #B64E8A;*/
 }
 
 
@@ -200,6 +205,7 @@ WHO page
     font-size: 2em;
     font-weight: 300;
     line-height: 1.5em;
+    margin: 0;
     padding: 2% 20% 4% 20%;
     color: #33bab1;
     text-align: justify;
@@ -783,27 +789,31 @@ PROJECTS page
 #projects{
     background-color: #33bab1;
     height: 100%;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
 .project_carousel{
     width: 70vw;
-    height: 50vh;
+    height: 80vh;
     margin: 0 auto;
     overflow: hidden;
 }
 
+/* Container for project title, description and image */
 .project_slide{
      text-align: center;
- }
+}
 
+/* Container for project icons */
 .project_selectors{
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
 }
 
 /* PROJECT content */
 
-/* Responsive Who element box */
+/* Responsive element box for project icons*/
 .project_element {
     position: relative;
     width: 7vw;
@@ -811,6 +821,12 @@ PROJECTS page
     overflow: hidden;
     background: #99ddd8;
     color: #00a99d;
+}
+
+.project_element:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
 }
 
 .project_element:hover{
@@ -825,12 +841,7 @@ PROJECTS page
     background: #007f76;
 }
 
-.project_element:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
+/* element title */
 .center_content h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
@@ -839,7 +850,7 @@ PROJECTS page
     text-align: center;
 }
 
-/* element text  */
+/* element description */
 .pro_ele_desc{
     font-family: 'Montserrat', sans-serif;
     font-size: .7vw;
@@ -850,6 +861,7 @@ PROJECTS page
     margin: 0;
 }
 
+/* element number */
 .pro_ele_Num{
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
@@ -859,29 +871,45 @@ PROJECTS page
     margin: 0;
 }
 
-#projects h2 {
+.project_slide h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 1.5vh 0;
+}
+
+.project_slide ul{
+    text-align: left;
+    padding: 0 5%;
+    margin: 0;
+}
+
+.project_slide li {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+    list-style: none;
+    color: #ffffff;
+}
+
+.project_slide li:last-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: #002a27;
+    padding: .5vh 0 2vh 0;
+}
+
+.project_selectors ul{
+    display: inline-block;
+    margin: 1.5vh 0;
+    padding: 0;
+}
+
+.project_selectors li{
+    display: inline-block;
     margin: 0;
     padding: 0;
-}
-
-.project_selectors{
-    width: 70%;
-    margin: 0 auto;
-}
-
-#projects ul{
-    display: inline-block;
-
-    margin: 5% 0 ;
-    padding: 0;
-
-}
-
-#projects li{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-
 }
 
 .project1{
@@ -893,10 +921,10 @@ PROJECTS page
 }
 
 .project_1_IMG{
-    background: url("../imgs/rogue_fighter.JPG") no-repeat;
+    background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;
     background-size: contain;
-    height: 50vh;
-    background-position: center;
+    height: 70%;
+    background-position: top center;
 }
 
 .project2{
@@ -907,12 +935,11 @@ PROJECTS page
     animation-duration: .5s;
 }
 
-
 .project_2_IMG{
-    background: url("../imgs/SGT_jQuery.JPG") no-repeat;
+    background: url("../imgs/angular-api-cms.jpg") no-repeat;
     background-size: contain;
-    background-position: center;
-    height: 50vh;
+    background-position: top center;
+    height: 70%;
 }
 
 .project3{
@@ -924,10 +951,10 @@ PROJECTS page
 }
 
 .project_3_IMG{
-    background: url("../imgs/SGT_angular.JPG") no-repeat;
+    background: url("../imgs/js-calculator.jpg") no-repeat;
     background-size: contain;
-    background-position: center;
-    height: 50vh;
+    background-position: top center;
+    height: 70%;
 }
 
 .project4{
@@ -939,10 +966,10 @@ PROJECTS page
 }
 
 .project_4_IMG{
-    background: url("../imgs/JS_calculator.JPG") no-repeat;
+    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
     background-size: contain;
-    background-position: center;
-    height: 50vh;
+    background-position: top center;
+    height: 70%;
 }
 
 @keyframes fadeIn {
@@ -1029,7 +1056,7 @@ footer{
     padding: 0;
     font-size: 4em;
     line-height: 15vh;
-    color: #ffffff;
+    color: #00a99d;
 }
 
 .connection_link a:hover{
