@@ -1,12 +1,4 @@
-$(document).ready(function(){
-  navScroller();
-  scrollPointer();
-  fadeCover();
-  scrollAnimation();
-  navHighLighter();
-});
-
-
+// shrinks and expands the navigation bar and contained elements based on scroll position
 function navScroller(){
   $(window).scroll(function(){
     if($(window).scrollTop()>=100){
@@ -25,6 +17,7 @@ function navScroller(){
   })
 }
 
+// animate icons to scale/zoom in/out based on scroll position
 function scrollAnimation(){
   var whoText = $('#who').offset().top;
   $(window).scroll(function(){
@@ -36,6 +29,7 @@ function scrollAnimation(){
   })
 }
 
+//highlight navigation active page link based on scroll position
 function navHighLighter(){
   var who = $('#who').offset().top;
   var what = $('#what').offset().top;
@@ -65,6 +59,8 @@ function navHighLighter(){
     }
   })
 }
+
+//animation on welcome page indicating that user should scroll down
 function scrollPointer() {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 500) {
@@ -76,6 +72,7 @@ function scrollPointer() {
   })
 }
 
+//fades in/out the white layer over the images where hovered on
 function fadeCover() {
   $('.cover').mouseenter(function () {
     $(this).fadeOut();
@@ -84,6 +81,7 @@ function fadeCover() {
   })
 }
 
+// functionality for the scroll effect across our single page app
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -99,3 +97,27 @@ $(function() {
   });
 });
 
+//Opens an overlay menu that contains resume
+function openOverlay(){
+  $('.resume_link').click(function(){
+    $('.overlay').css("width","100%");
+  })
+}
+
+//Closes an overlay menu that contains resume
+function closeOverlay(){
+  $('.close_btn').click(function(){
+    $('.overlay').css("width","0");
+  })
+}
+
+//ready this functions on dom load
+$(document).ready(function(){
+  navScroller();
+  scrollPointer();
+  fadeCover();
+  scrollAnimation();
+  navHighLighter();
+  openOverlay();
+  closeOverlay();
+});

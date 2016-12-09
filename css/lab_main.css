@@ -367,6 +367,7 @@ WHO page
     margin: 0 auto;
     overflow: hidden;
     background: #00a99d;
+    transition: 0.05s;
 }
 
 .element_box:before{
@@ -451,7 +452,7 @@ WHO page
 }
 
 .caption a{
-    color: #1d1f21;
+    color: #007f76;
 }
 
 .caption a:hover{
@@ -793,16 +794,13 @@ PROJECTS page
     padding: 3% 0;
 }
 
+/* sets the contains the project title, project bullet descriptions */
 .project_carousel{
-    width: 70vw;
-    height: 80vh;
+    width: 60vw;
+    height: 70vh;
     margin: 0 auto;
     overflow: hidden;
-}
-
-/* Container for project title, description and image */
-.project_slide{
-     text-align: center;
+    text-align: center;
 }
 
 /* Container for project icons */
@@ -810,68 +808,21 @@ PROJECTS page
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    padding: 3% 0;
 }
 
 /* PROJECT content */
 
-/* Responsive element box for project icons*/
-.project_element {
-    position: relative;
-    width: 7vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: #99ddd8;
-    color: #00a99d;
+/* Container for project image and text */
+.project_slide{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation-name: fadeIn;
+    animation-duration: .5s;
 }
 
-.project_element:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-.project_element:hover{
-    background: #cceeeb;
-}
-
-.project_element:nth-child(2n +2){
-    background: #66cbc4;
-}
-
-.project_element:nth-child(2n +2):hover{
-    background: #007f76;
-}
-
-/* element title */
-.center_content h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-/* element description */
-.pro_ele_desc{
-    font-family: 'Montserrat', sans-serif;
-    font-size: .7vw;
-    position: absolute;
-    right: 0;
-    bottom: 15%;
-    left: 0;
-    margin: 0;
-}
-
-/* element number */
-.pro_ele_Num{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    margin: 0;
-}
-
+/* project title */
 .project_slide h2{
     font-family: 'Oswald', sans-serif;
     font-size: 3vw;
@@ -881,9 +832,10 @@ PROJECTS page
     padding: 0 0 1.5vh 0;
 }
 
+/* project description */
 .project_slide ul{
     text-align: left;
-    padding: 0 5%;
+    padding: 0;
     margin: 0;
 }
 
@@ -901,9 +853,50 @@ PROJECTS page
     padding: .5vh 0 2vh 0;
 }
 
+/*.project_1_IMG{*/
+    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
+    /*background-size: contain;*/
+    /*height: 70%;*/
+    /*background-position: top center;*/
+/*}*/
+
+.project_2_IMG{
+    background: url("../imgs/angular-api-cms.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.project_3_IMG{
+    background: url("../imgs/js-calculator.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.project_4_IMG{
+    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+@keyframes fadeIn {
+    0%   {opacity: .02}
+    50%  {opacity: .05}
+    100% {opacity: 1}
+}
+
+/* Horizontally organized square project icons*/
 .project_selectors ul{
     display: inline-block;
-    margin: 1.5vh 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -913,70 +906,64 @@ PROJECTS page
     padding: 0;
 }
 
-/*.project1{*/
-    /*display: inline-block;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*animation-name: fadeIn;*/
-    /*animation-duration: .5s;*/
-/*}*/
-
-/*.project_1_IMG{*/
-    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
-    /*background-size: contain;*/
-    /*height: 70%;*/
-    /*background-position: top center;*/
-/*}*/
-
-.project2{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    animation-name: fadeIn;
-    animation-duration: .5s;
+/* Responsive element box for square project icons*/
+.project_element {
+    position: relative;
+    width: 7vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #99ddd8;
+    color: #00a99d;
 }
 
-.project_2_IMG{
-    background: url("../imgs/angular-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    height: 70%;
+.project_element:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
 }
 
-.project3{
-    display: none;
-    width: 100%;
-    height: 100%;
-    animation-name: fadeIn;
-    animation-duration: .5s;
+/* colors for square project icons */
+.project_element:hover{
+    background: #cceeeb;
 }
 
-.project_3_IMG{
-    background: url("../imgs/js-calculator.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    height: 70%;
+.project_element:nth-child(2n +2){
+    background: #66cbc4;
 }
 
-.project4{
-    display: none;
-    width: 100%;
-    height: 100%;
-    animation-name: fadeIn;
-    animation-duration: .5s;
+.project_element:nth-child(2n +2):hover{
+    background: #007f76;
 }
 
-.project_4_IMG{
-    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    height: 70%;
+/* square project icons text */
+/* element title */
+.center_content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
-@keyframes fadeIn {
-    0%   {opacity: .02}
-    50%  {opacity: .05}
-    100% {opacity: 1}
+/* element number */
+.pro_ele_Num{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0;
+}
+
+/* element description */
+.pro_ele_desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7vw;
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    margin: 0;
 }
 
 /*
@@ -1073,4 +1060,61 @@ footer{
     text-align: center;
     color: #00a99d;
     /*background-color: #007f76;*/
+}
+
+/*
+***********************************
+Overlay
+***********************************
+*/
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    z-index: 10;
+}
+
+/* content within overlay */
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content a {
+    text-decoration: none;
+    font-size: 3em;
+    color: #00a99d;
+    transition: 0.5s;
+}
+
+.overlay-content a:hover{
+    color: #c544b4;
+}
+
+.overlay-content p {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #00a99d;
+}
+
+.close_btn{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 3em;
+    transition: 0.5s;
+    color: #00a99d;
+}
+
+.close_btn:hover{
+    color: #c544b4;
 }
