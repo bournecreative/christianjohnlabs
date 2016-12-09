@@ -37,10 +37,6 @@ function updateFrame(){
       current_slide = index;
       setFrame();
       break;
-    case 3:
-      current_slide = index;
-      setFrame();
-      break;
   }
 }
 
@@ -51,8 +47,3 @@ function setFrame(){
   slides.hide();
   slide.css('display','inline-block').animate();
 }
-
-
-
-
-
