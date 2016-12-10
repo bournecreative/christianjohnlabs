@@ -20,6 +20,15 @@ html, body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* removes outlines for links in firefox */
+a:focus {
+    outline: none;
+}
+
+.fa ul {
+    list-style-image: none;
+}
+
 .visibility{
     display: none;
 }
@@ -1041,11 +1050,13 @@ footer{
 }
 
 .connection_link a{
+    display: inline-block;
     padding: 0;
     font-size: 4em;
     line-height: 15vh;
     color: #00a99d;
 }
+
 
 .connection_link a:hover{
     color: #c544b4;

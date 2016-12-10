@@ -111,6 +111,7 @@ function closeOverlay(){
   })
 }
 
+
 //ready this functions on dom load
 $(document).ready(function(){
   navScroller();
