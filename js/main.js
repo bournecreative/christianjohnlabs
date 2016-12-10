@@ -37,7 +37,7 @@ function navHighLighter(){
   var connect = $('#connect').offset().top;
   
   $(window).on('scroll', function(){
-    if($(window).scrollTop()>=who && $(window).scrollTop()<what-50) {
+    if($(window).scrollTop()>=who-50 && $(window).scrollTop()<what-50) {
       $('.who').addClass('nav_link_highlight');
     }else{
       $('.who').removeClass('nav_link_highlight');

@@ -544,7 +544,7 @@ WHAT page
     font-weight: 500;
     line-height: 1.5em;
     margin: 0;
-    padding: 4% 20% 0 20%;
+    padding: 3% 20% 0 20%;
     color: #ffffff;
     text-align: center;
 }
@@ -791,7 +791,6 @@ PROJECTS page
 #projects{
     background-color: #33bab1;
     height: 100%;
-    padding: 3% 0;
 }
 
 /* sets the contains the project title, project bullet descriptions */
@@ -799,6 +798,7 @@ PROJECTS page
     width: 60vw;
     height: 70vh;
     margin: 0 auto;
+    padding: 3% 0 0 0;
     overflow: hidden;
     text-align: center;
 }
