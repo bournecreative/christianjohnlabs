@@ -25,8 +25,13 @@ a:focus {
     outline: none;
 }
 
-.fa ul {
-    list-style-image: none;
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .visibility{
@@ -359,7 +364,7 @@ WHO page
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: initial;
+    font-size: 0;
 }
 
 .col_30{
@@ -367,6 +372,7 @@ WHO page
     text-align: center;
     width: 30%;
     vertical-align: top; /* prevent 2nd column from falling out of place */
+    font-size: medium;
 }
 
 /* Responsive Who element box */
@@ -543,15 +549,19 @@ WHAT page
 /***  WHAT content ***/
 
 .what_intro{
+    margin-bottom: -.25%;
     background-color: #33bab1;
     text-align: center;
+    /*Required for IE
+    * IE does not recognize font-size initial, consequently inheriting font-size 0 from .container
+    */
+    font-size: medium;
 }
 
 .what_heading{
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     font-weight: 500;
-    line-height: 1.5em;
     margin: 0;
     padding: 3% 20% 0 20%;
     color: #ffffff;
@@ -584,20 +594,21 @@ WHAT page
     right: 0;
     width: 0;
     height: 0;
-    border-color: #33bab1 transparent transparent transparent;
-    border-style: solid;
-    border-width: 2vw 2vw 0 2vw ;
-    z-index: 10;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 2vw solid #33bab1;
+    z-index: 5;
 }
 
 /* image collage side */
 .col_50_image_container{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     width: 50%;
     padding: 0;
     margin: 0;
     z-index: 0;
+    font-size: 0;
 }
 
 /* code side */
@@ -609,7 +620,10 @@ WHAT page
     padding: 0;
     margin: 0;
     background-color: #1d1f21;
-    font-size: initial;
+    /*Required for IE
+   * IE does not recognize font-size initial, consequently inheriting font-size 0 from .container
+   */
+    font-size: medium;
     overflow: hidden;
     z-index: 0;
 }
@@ -1031,6 +1045,10 @@ footer{
     width: 70%;
     margin: 0 auto;
     padding: 0;
+    /*Required for IE
+    * IE does not recognize font-size initial, consequently inheriting font-size 0 from .container
+    */
+    font-size: medium;
 }
 
 /* FOOTER content */
@@ -1040,20 +1058,19 @@ footer{
 }
 
 .connection_links ul{
+   margin: 0;
     padding: 0;
 }
 
 .connection_link{
     display: inline-block;
-    font-size: initial;
-    padding: 0 2%;
+    padding: 2% 1% .5% 1%;
 }
 
 .connection_link a{
     display: inline-block;
     padding: 0;
     font-size: 4em;
-    line-height: 15vh;
     color: #00a99d;
 }
 
@@ -1067,7 +1084,7 @@ footer{
     font-weight: 300;
     font-size: 1em;
     margin: 0;
-    padding: 0 0 1% 0;
+    padding: 0 0 .5% 0;
     text-align: center;
     color: #00a99d;
     /*background-color: #007f76;*/
