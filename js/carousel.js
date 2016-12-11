@@ -44,6 +44,14 @@ function updateFrame(){
 function setFrame(){
   //Set slide the current_slide - according to numericial index
   var slide = slides.eq(current_slide);
-  slides.slideDown('slow').hide();
-  slide.css('display','inline-block').slideDown('slow');
+  slides.hide();
+  slide.slideDown(600).css('display','inline-block');
 }
+
+var autoSlide = setInterval(function(){
+  current_slide += 1;
+    if (current_slide > slideCount){
+      current_slide = 0;
+    }
+  setFrame();
+  },5000);
