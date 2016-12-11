@@ -884,6 +884,7 @@ PROJECTS page
 /*}*/
 
 .project_2_IMG{
+    position: relative;
     background: url("../imgs/angular-api-cms.jpg") no-repeat;
     background-size: contain;
     background-position: top center;
@@ -893,6 +894,7 @@ PROJECTS page
 }
 
 .project_3_IMG{
+    position: relative;
     background: url("../imgs/js-calculator.jpg") no-repeat;
     background-size: contain;
     background-position: top center;
@@ -902,6 +904,7 @@ PROJECTS page
 }
 
 .project_4_IMG{
+    position: relative;
     background: url("../imgs/jquery-api-cms.jpg") no-repeat;
     background-size: contain;
     background-position: top center;
@@ -914,6 +917,58 @@ PROJECTS page
     0%   {opacity: .02}
     50%  {opacity: .05}
     100% {opacity: 1}
+}
+
+/*
+* Animation for hover on projects
+*/
+
+/*Project caption area to be revealed on hover */
+.project_caption{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    padding: 1vw;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background: rgba(0,0,0, 0.8);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0,-100%);
+    transform: translate(0,-100%);
+}
+
+/*Project caption area link to be revealed on hover */
+.project_caption a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #cceeeb;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.project_caption a:hover{
+    color: #33bab1;
+}
+
+/* move caption area into view on hover */
+.project_slide div:hover .project_caption,
+.project_slide div:hover .project_caption a{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+/* delay text from text dropping into view within caption area */
+.project_slide div:hover .project_caption a{
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
 }
 
 /* Horizontally organized square project icons*/
