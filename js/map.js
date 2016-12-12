@@ -9,6 +9,7 @@ function initMap() {
     zoomControl: false,
     scaleControl: false,
     scrollwheel: false,
+    draggable: false,
     styles: styles
   });
   // designates where the marker should be placed on map
