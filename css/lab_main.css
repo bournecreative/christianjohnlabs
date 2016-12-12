@@ -266,6 +266,7 @@ WHO page
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
 }
+
 .skill_3{
     display: inline-block;
     padding: 0 10px;
@@ -279,6 +280,7 @@ WHO page
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
+
 .skill_4{
     display: inline-block;
     padding: 0 10px;
@@ -474,7 +476,7 @@ WHO page
     color: #007f76;
 }
 
-    /* Hover effect for Photography */
+/* Hover effect for Photography */
 .photo_ele:hover{
     background: url("../imgs/photography.png") no-repeat;
     background-color: #66cbc4;
@@ -1084,6 +1086,7 @@ CONNECT page
     color: #C544B4;
     z-index: 3;
 }
+
 /*
 ***********************************
 Footer
@@ -1092,7 +1095,7 @@ Footer
 
 footer{
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #007f76;
 }
 
@@ -1119,7 +1122,7 @@ footer{
 
 .connection_link{
     display: inline-block;
-    padding: 2% 1% .5% 1%;
+    padding: 2% 3% .5% 3%;
 }
 
 .connection_link a{
@@ -1184,9 +1187,11 @@ Overlay
 }
 
 .overlay-content p {
+    display: inline-block;
     text-decoration: none;
     font-size: 1.5em;
     color: #00a99d;
+    padding: 0 1%;
 }
 
 .close_btn{
@@ -1200,4 +1205,436 @@ Overlay
 
 .close_btn:hover{
     color: #c544b4;
+}
+
+/*
+***********************************
+ ------------> MOBILE <------------
+***********************************
+*/
+
+@media screen and (max-width: 414px){
+
+/*
+***********************************
+mobile NAV
+***********************************
+*/
+
+    /* mobile navigation */
+
+    .brand_text{
+        display: none;
+    }
+
+    .navLinks{
+        margin-right: 3%;
+    }
+
+    .navigation li{
+        padding: 0 2%;
+    }
+
+    .navigation ul a{
+        font-size: 4vw;
+    }
+
+/*
+***********************************
+mobile WELCOME page
+***********************************
+*/
+
+    /* mobile welcome background */
+    #welcome{
+        position: relative;
+        background: url("../imgs/mobile_lab-640x1136.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+/*
+***********************************
+mobile WHO page
+***********************************
+*/
+
+    /* mobile WHO heading text */
+
+    #who h1{
+        font-size: 1.2em;
+        padding: 20% 13% 1% 13%;
+    }
+
+    .main_heading{
+        font-size: 3em;
+    }
+
+    .sub_heading{
+        font-size: 1.5em;
+    }
+
+    /* mobile WHO computer icon */
+
+    .work_computer{
+        width: 50vw;
+    }
+
+    /* mobile WHO content text */
+
+    .interest_text{
+        padding: 5% 10% 2% 10%;
+    }
+
+    /*mobile update 30 to 100%*/
+    .col_30{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        vertical-align: top; /* prevent 2nd column from falling out of place */
+        font-size: medium;
+    }
+
+    /*update element boxes to be larger for mobile */
+    .element_box{
+        width: 50vw;
+    }
+
+    /* mobile element text box  */
+    .center_content h2{
+        font-size: 15vw;
+    }
+
+    /* mobile element text  */
+    .ele_desc{
+        font-size: 5vw;
+    }
+
+    .ele_Num{
+        font-size: 5vw;
+        margin: 0;
+        top: 5%;
+        left: 5%;
+    }
+
+    /* mobile caption area */
+    .caption{
+        height: 4vh;
+        padding: 5vw 0;
+    }
+
+    /* mobile caption formatting */
+    .caption p{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+
+/*
+***********************************
+mobile WHAT page
+***********************************
+*/
+
+    /* mobile WHAT heading text */
+
+    .what_heading{
+        font-size: 2em;
+    }
+
+    .what_intro p{
+        font-size: 1em;
+        padding: 5% 10%;
+    }
+
+    .what_closing{
+        font-size: 2em;
+        padding: 0 10% 4% 10%;
+    }
+
+    /* mobile division triangle */
+
+    .rel_container:before{
+        border-left: 7vw solid transparent;
+        border-right: 7vw solid transparent;
+        border-top: 7vw solid #33bab1;
+    }
+
+    /* mobile images collage */
+    .image_row_1{
+        display: block;
+        width: 100%;
+        height:20vh;
+    }
+
+    .rogue_image{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url("../imgs/rogue-fighter-icon.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    .lab_image{
+        display: none;
+    }
+
+    .image_row_2{
+        display: block;
+        width: 100%;
+        height:30vh;
+    }
+
+    .vol_image{
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        height: 100%;
+        background: url("../imgs/voltron.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .arch_image{
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        background: url("../imgs/archer-playing-card-back.png") no-repeat;
+        background-position: top left;
+    }
+
+    .casa_image{
+     display: none;
+    }
+
+    .image_row_3{
+        display: block;
+        width: 100%;
+        height:20vh;
+    }
+
+    .labs_card_image{
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+        background: url("../imgs/cjlabs-card.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .cat_a_image{
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        background: url("../imgs/american-cat.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #00395e;
+        overflow: hidden;
+    }
+
+    .nexus_image{
+        display: none;
+    }
+
+    .image_row_4{
+        display: block;
+        width: 100%;
+        height:30vh;
+    }
+
+    .pb_droid_image{
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        background: url("../imgs/imperial-probe-droid-volume.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .trooper_image{
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+        background: url("../imgs/first-order-trooper.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+/*
+***********************************
+mobile PROJECTS page
+***********************************
+*/
+    /* mobile sets the contains the project title, project bullet descriptions */
+    .project_carousel{
+        width: 95%;
+        margin: 0 auto;
+        padding: 3% 0 0 0;
+        text-align: center;
+    }
+
+    /* mobile container for project icons */
+    .project_selectors{
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3% 0;
+    }
+
+    /* mobile PROJECT content */
+
+    /* mobile container for project image and text */
+    .project_slide{
+        display: inline-block;
+        width: 100%;
+        animation-name: fadeIn;
+        animation-duration: .5s;
+    }
+
+    /* mobile container for project icons */
+    .project_selectors{
+        width: 100%;
+    }
+
+    /* mobile project title */
+    .project_slide h2{
+        font-size: 8vw;
+    }
+
+      .project_slide li {
+        font-family: 'Heebo', sans-serif;
+        font-size: 3vw;
+        line-height: 1.5em;
+        padding: 0 5%;
+        list-style: none;
+        color: #ffffff;
+    }
+
+    .project_slide li:last-child{
+        font-size: 3vw;
+        padding: 2% 5% 2% 5%;
+    }
+
+    /*.project_1_IMG{*/
+    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
+    /*background-size: contain;*/
+    /*height: 70%;*/
+    /*background-position: top center;*/
+    /*}*/
+
+    .project_2_IMG{
+        position: relative;
+        background: url("../imgs/angular-api-cms.jpg") no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .project_3_IMG{
+        position: relative;
+        background: url("../imgs/js-calculator.jpg") no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .project_4_IMG{
+        position: relative;
+        background: url("../imgs/jquery-api-cms.jpg") no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    @keyframes fadeIn {
+        0%   {opacity: .02}
+        50%  {opacity: .05}
+        100% {opacity: 1}
+    }
+
+    /*
+    * Animation for hover on projects
+    */
+
+    /*mobile Project caption area link to be revealed on hover */
+    .project_caption a{
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+    /* mobile Responsive element box for square project icons*/
+    .project_element {
+        position: relative;
+        width: 20vw;
+        margin: 0 auto;
+        overflow: hidden;
+        background: #99ddd8;
+        color: #00a99d;
+    }
+
+    /* mobile square project icons text */
+    /* mobile element title */
+    .center_content h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vw;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    /* mobile element number */
+    .pro_ele_Num{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1vw;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        margin: 0;
+    }
+
+    /* mobile element description */
+    .pro_ele_desc{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .7vw;
+        position: absolute;
+        right: 0;
+        bottom: 15%;
+        left: 0;
+        margin: 0;
+    }
+
+/*
+***********************************
+mobile CONNECT page
+***********************************
+*/
+
+    .connect_title{
+        font-size: 15vw;
+    }
+
+    .copyRight{
+        padding: 0 0 5% 0;
+    }
+
 }
