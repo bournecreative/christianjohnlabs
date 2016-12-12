@@ -1273,7 +1273,7 @@ mobile WELCOME page
         background-size: cover;
         background-position: top;
         /*safari mobile does not use fixed*/
-        background-attachment: fixed;
+        background-attachment: scroll;
         width: 100%;
         min-height: 100vh;
     }
