@@ -58,13 +58,17 @@ a:focus {
 .brand img{
     height: 100%;
     transition: 0.35s all ease;
-    transform: scale(1);
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1); /* Standard syntax */
 }
 
 .brand img:hover{
     height: 100%;
     transition: 0.35s all ease;
-    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari */
+    transform: scale(1.1); /* Standard syntax */
 }
 
 .brand_text{
@@ -248,7 +252,9 @@ WHO page
     background: url(../imgs/dataBase_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
 }
@@ -262,7 +268,9 @@ WHO page
     background: url(../imgs/angular_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
 }
@@ -276,7 +284,9 @@ WHO page
     background: url(../imgs/html5_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
@@ -290,7 +300,9 @@ WHO page
     background: url(../imgs/js_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .4s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
 }
 
 .skill_5{
@@ -302,7 +314,9 @@ WHO page
     background: url(../imgs/jQuery_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
@@ -316,7 +330,9 @@ WHO page
     background: url(../imgs/gitHub_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
 }
@@ -330,7 +346,9 @@ WHO page
     background: url(../imgs/css_single_icon.png) no-repeat;
     background-size: contain;
     transition: all .5s ease-in-out;
-    transform: scale(0);
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
 }
@@ -342,7 +360,9 @@ WHO page
 }
 
 .scale_object{
-    transform: scale(1);
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1); /* Standard syntax */
 }
 
 .work_computer{
@@ -1251,7 +1271,8 @@ mobile WELCOME page
         background: url("../imgs/mobile_lab-640x1136.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: top;
+        /*safari mobile does not use fixed*/
         background-attachment: fixed;
         width: 100%;
         min-height: 100vh;
