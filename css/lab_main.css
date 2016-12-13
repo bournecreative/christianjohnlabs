@@ -460,11 +460,12 @@ WHO page
 /* caption area */
 .caption{
     position: absolute;
-    width: 100%;
-    height: 3vh;
-    padding: 1vw;
     left: 0;
     bottom: 0;
+    width: 100%;
+    height: 4vw;
+    margin: 0;
+    box-sizing: border-box;
     background: rgba(204,238,235, 0.5);
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -475,11 +476,13 @@ WHO page
 /* caption formatting */
 .caption p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
-    line-height: 1.2vw;
     font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    padding: .5vw;
     position: absolute;
-    left: .5vw;
+    left: 0;
+    right: 0;
     margin: 0;
     color: #00a99d;
     -webkit-transition: -webkit-transform 0.35s;
@@ -580,32 +583,45 @@ WHAT page
     font-size: medium;
 }
 
+/*what_section title */
 .what_heading{
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     font-weight: 500;
     margin: 0;
-    padding: 3% 20% 0 20%;
+    padding: 3% 0 0 0;
+    color: #cceeeb;
+    text-align: center;
+}
+
+/*opening headline*/
+.what_tag{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0;
+    padding: 1% 15% 1% 15%;
     color: #ffffff;
     text-align: center;
 }
 
-.what_intro p{
-    font-family: 'Heebo', sans-serif;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-}
-
+/*closing headline*/
 .what_closing{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 300;
     margin: 0;
-    padding-bottom: 4%;
     color: #ffffff;
     text-align: center;
+}
+
+/*closing paragraph*/
+.what_desc{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 1% 10% 3% 10%;
+    color: #ffffff;
 }
 
 .rel_container:before{
@@ -835,162 +851,37 @@ PROJECTS page
 
 #projects{
     background-color: #33bab1;
+    width: 100%;
     height: 100%;
+    padding-bottom: 5%;
 }
 
-/* sets the contains the project title, project bullet descriptions */
-.project_carousel{
-    width: 60vw;
-    height: 70vh;
-    margin: 0 auto;
-    padding: 3% 0 0 0;
-    overflow: hidden;
-    text-align: center;
-}
-
-/* Container for project icons */
+/* container for project selectors */
 .project_selectors{
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    padding: 3% 0;
+    padding: 1% 0 1% 0;
+}
+
+/* container for the project title, purpose and description */
+.project_carousel{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 /* PROJECT content */
 
-/* Container for project image and text */
-.project_slide{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    animation-name: fadeIn;
-    animation-duration: .5s;
-}
-
-/* project title */
-.project_slide h2{
+/*project section title */
+.project_heading{
     font-family: 'Oswald', sans-serif;
-    font-size: 3vw;
-    font-weight: 300;
-    color: #ffffff;
+    font-size: 3em;
+    font-weight: 500;
     margin: 0;
-    padding: 0 0 1.5vh 0;
-}
-
-/* project description */
-.project_slide ul{
-    text-align: left;
-    padding: 0;
-    margin: 0;
-}
-
-.project_slide li {
-    font-family: 'Heebo', sans-serif;
-    font-size: 1vw;
-    list-style: none;
-    color: #ffffff;
-}
-
-.project_slide li:last-child{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
-    color: #002a27;
-    padding: .5vh 0 2vh 0;
-}
-
-/*.project_1_IMG{*/
-    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
-    /*background-size: contain;*/
-    /*height: 70%;*/
-    /*background-position: top center;*/
-/*}*/
-
-.project_2_IMG{
-    position: relative;
-    background: url("../imgs/angular-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.project_3_IMG{
-    position: relative;
-    background: url("../imgs/js-calculator.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.project_4_IMG{
-    position: relative;
-    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-}
-
-@keyframes fadeIn {
-    0%   {opacity: .02}
-    50%  {opacity: .05}
-    100% {opacity: 1}
-}
-
-/*
-* Animation for hover on projects
-*/
-
-/*Project caption area to be revealed on hover */
-.project_caption{
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-    padding: 1vw;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    background: rgba(0,0,0, 0.8);
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate(0,-100%);
-    transform: translate(0,-100%);
-}
-
-/*Project caption area link to be revealed on hover */
-.project_caption a{
-    position: absolute;
-    left: 0;
-    right: 0;
-    font-size: 1.5em;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    padding: 3% 15% 0 15%;
     color: #cceeeb;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate(0, -200%);
-    transform: translate(0, -200%);
-}
-
-.project_caption a:hover{
-    color: #33bab1;
-}
-
-/* move caption area into view on hover */
-.project_slide div:hover .project_caption,
-.project_slide div:hover .project_caption a{
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0);
-}
-
-/* delay text from text dropping into view within caption area */
-.project_slide div:hover .project_caption a{
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
+    text-align: center;
 }
 
 /* Horizontally organized square project icons*/
@@ -1009,7 +900,7 @@ PROJECTS page
 /* Responsive element box for square project icons*/
 .project_element {
     position: relative;
-    width: 7vw;
+    width: 8vw;
     margin: 0 auto;
     overflow: hidden;
     background: #99ddd8;
@@ -1058,12 +949,171 @@ PROJECTS page
 /* element description */
 .pro_ele_desc{
     font-family: 'Montserrat', sans-serif;
-    font-size: .7vw;
+    font-size: 1vw;
     position: absolute;
     right: 0;
     bottom: 15%;
     left: 0;
     margin: 0;
+}
+
+/*PROJECT SECTION*/
+
+/* container for the project title, purpose and description */
+.project_slide {
+    display: none;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+
+.project_1{
+    display: block;
+}
+
+/* project title */
+.project_slide h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 1.5vh 0;
+}
+
+/* project description */
+.project_slide ul{
+    text-align: left;
+    padding: .5% 0;
+    margin: 0;
+    color: #002a27;
+}
+
+.tech .fa{
+    font-size: 1.5vw;
+}
+
+.project_slide .title{
+    font-size: 1.2vw;
+}
+
+.purpose{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+    list-style: none;
+}
+
+.highlights{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+    list-style: none;
+    padding: 2% 0;
+}
+
+.tech{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+    list-style: none;
+    padding: 2% 0;
+}
+
+
+/*.project_1_IMG{*/
+    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
+    /*background-size: contain;*/
+    /*height: 70%;*/
+    /*background-position: top center;*/
+/*}*/
+
+.project_2_IMG{
+    position: relative;
+    background: url("../imgs/angular-api-cms.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 50vh;
+    overflow-y: hidden;
+}
+
+.project_3_IMG{
+    position: relative;
+    background: url("../imgs/js-calculator.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 50vh;
+    overflow-y: hidden;
+}
+
+.project_4_IMG{
+    position: relative;
+    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 50vh;
+    overflow-y: hidden;
+}
+
+@keyframes fadeIn {
+    0%   {opacity: .02}
+    50%  {opacity: .05}
+    100% {opacity: 1}
+}
+
+/*
+* Animation for hover on projects
+*/
+
+/*Project caption area to be revealed on hover */
+.project_caption{
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    line-height: 15vh;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.9);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0,-100%);
+    transform: translate(0,-100%);
+}
+
+/*Project caption area link to be revealed on hover */
+.project_caption a{
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #cceeeb;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.project_caption a:hover{
+    color: #33bab1;
+}
+
+/* move caption area into view on hover */
+.project_slide div:hover .project_caption,
+.project_slide div:hover .project_caption a{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+/* delay text from text dropping into view within caption area */
+.project_slide div:hover .project_caption a{
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
 }
 
 /*
@@ -1343,14 +1393,15 @@ mobile WHO page
 
     /* mobile caption area */
     .caption{
-        height: 4vh;
-        padding: 5vw 0;
+        height: 15vw;
+
     }
 
     /* mobile caption formatting */
     .caption p{
-        font-size: 6vw;
-        line-height: 6vw;
+        font-size: 5vw;
+        line-height: 5vw;
+        padding: 4vw 2vw;
     }
 
 /*
@@ -1359,20 +1410,30 @@ mobile WHAT page
 ***********************************
 */
 
-    /* mobile WHAT heading text */
-
+    /* mobile what_section title */
     .what_heading{
+        font-size: 2.5em;
+        padding: 3% 0 0 0;
+        margin: 0;
+    }
+
+    /* mobile opening headline*/
+    .what_tag{
         font-size: 2em;
+        padding: 2% 15% 2% 15%;
     }
 
-    .what_intro p{
-        font-size: 1em;
-        padding: 5% 10%;
-    }
-
+    /* mobile closing headline*/
     .what_closing{
-        font-size: 2em;
-        padding: 0 10% 4% 10%;
+        font-size: 1.7em;
+        padding: 1% 0;
+    }
+
+    /*mobile closing paragraph*/
+    .what_desc {
+        font-size: 1em;
+        padding: 4% 10%;
+        /*padding: 1% 10% 3% 10%;*/
     }
 
     /* mobile division triangle */
@@ -1502,104 +1563,11 @@ mobile WHAT page
 mobile PROJECTS page
 ***********************************
 */
-    /* mobile sets the contains the project title, project bullet descriptions */
-    .project_carousel{
-        width: 95%;
-        margin: 0 auto;
+    /* mobile what_section title */
+    .what_heading{
+        font-size: 2.5em;
         padding: 3% 0 0 0;
-        text-align: center;
-    }
-
-    /* mobile container for project icons */
-    .project_selectors{
-        width: 95%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 3% 0;
-    }
-
-    /* mobile PROJECT content */
-
-    /* mobile container for project image and text */
-    .project_slide{
-        display: inline-block;
-        width: 100%;
-        animation-name: fadeIn;
-        animation-duration: .5s;
-    }
-
-    /* mobile container for project icons */
-    .project_selectors{
-        width: 100%;
-    }
-
-    /* mobile project title */
-    .project_slide h2{
-        font-size: 8vw;
-    }
-
-      .project_slide li {
-        font-family: 'Heebo', sans-serif;
-        font-size: 3vw;
-        line-height: 1.5em;
-        padding: 0 5%;
-        list-style: none;
-        color: #ffffff;
-    }
-
-    .project_slide li:last-child{
-        font-size: 3vw;
-        padding: 2% 5% 2% 5%;
-    }
-
-    /*.project_1_IMG{*/
-    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
-    /*background-size: contain;*/
-    /*height: 70%;*/
-    /*background-position: top center;*/
-    /*}*/
-
-    .project_2_IMG{
-        position: relative;
-        background: url("../imgs/angular-api-cms.jpg") no-repeat;
-        background-size: contain;
-        background-position: top center;
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    .project_3_IMG{
-        position: relative;
-        background: url("../imgs/js-calculator.jpg") no-repeat;
-        background-size: contain;
-        background-position: top center;
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    .project_4_IMG{
-        position: relative;
-        background: url("../imgs/jquery-api-cms.jpg") no-repeat;
-        background-size: contain;
-        background-position: top center;
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    @keyframes fadeIn {
-        0%   {opacity: .02}
-        50%  {opacity: .05}
-        100% {opacity: 1}
-    }
-
-    /*
-    * Animation for hover on projects
-    */
-
-    /*mobile Project caption area link to be revealed on hover */
-    .project_caption a{
-        font-size: 2em;
-        line-height: 2em;
+        margin: 0;
     }
 
     /* mobile Responsive element box for square project icons*/
@@ -1612,35 +1580,20 @@ mobile PROJECTS page
         color: #00a99d;
     }
 
-    /* mobile square project icons text */
-    /* mobile element title */
+    /* square project icons text */
+    /* element title */
     .center_content h3{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2vw;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+        font-size: 5vw;
     }
 
-    /* mobile element number */
+    /* element number */
     .pro_ele_Num{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1vw;
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        margin: 0;
+        font-size: 4vw;
     }
 
-    /* mobile element description */
+    /* element description */
     .pro_ele_desc{
-        font-family: 'Montserrat', sans-serif;
-        font-size: .7vw;
-        position: absolute;
-        right: 0;
-        bottom: 15%;
-        left: 0;
-        margin: 0;
+        font-size: 2.5vw;
     }
 
 /*
