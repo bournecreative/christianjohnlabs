@@ -405,6 +405,7 @@ WHO page
     overflow: hidden;
     background: #00a99d;
     transition: 0.05s;
+    cursor: pointer;
 }
 
 .element_box:before{
@@ -647,6 +648,7 @@ WHAT page
     margin: 0;
     z-index: 0;
     font-size: 0;
+    cursor: pointer;
 }
 
 /* code side */
@@ -894,6 +896,7 @@ PROJECTS page
     display: inline-block;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 /* Responsive element box for square project icons*/
@@ -1025,6 +1028,7 @@ PROJECTS page
     position: relative;
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .project_2 img{
@@ -1035,6 +1039,7 @@ PROJECTS page
     position: relative;
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .project_3 img{
@@ -1045,6 +1050,7 @@ PROJECTS page
     position: relative;
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .project_4 img{
