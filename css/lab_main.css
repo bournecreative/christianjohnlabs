@@ -50,6 +50,7 @@ a:focus {
 }
 
 .brand{
+    position: relative;
     display: inline-block;
     height: 100%;
     margin-left: 5%;
@@ -1192,7 +1193,7 @@ footer{
 
 .connection_link{
     display: inline-block;
-    padding: 2% 3% .5% 3%;
+    padding: 2% 1% .5% 1%;
 }
 
 .connection_link a{
@@ -1614,6 +1615,11 @@ mobile CONNECT page
         font-size: 15vw;
     }
 
+    .connection_link{
+        display: inline-block;
+        padding: 2% 3% .5% 3%;
+    }
+
     .copyRight{
         padding: 0 0 5% 0;
     }
@@ -1624,20 +1630,21 @@ mobile CONNECT page
 ***********************************
 */
 
-@media screen and (max-width: 376px) {
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px) {
+
+    .brand{
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        margin-left: 5%;
+    }
 
     .brand img{
-         width: auto;
-         height: 100%;
-         transition: 0.35s all ease;
-         -ms-transform: scale(1); /* IE 9 */
-         -webkit-transform: scale(1); /* Safari */
-         transform: scale(1); /* Standard syntax */
-     }
-
-    .mobile_img{
-        width: auto;
-        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
         transition: 0.35s all ease;
         -ms-transform: scale(1); /* IE 9 */
         -webkit-transform: scale(1); /* Safari */
