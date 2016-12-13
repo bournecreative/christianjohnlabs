@@ -1627,6 +1627,15 @@ mobile CONNECT page
 @media screen and (max-width: 376px) {
 
     .brand img{
+         width: auto;
+         height: 100%;
+         transition: 0.35s all ease;
+         -ms-transform: scale(1); /* IE 9 */
+         -webkit-transform: scale(1); /* Safari */
+         transform: scale(1); /* Standard syntax */
+     }
+
+    .mobile_img{
         width: auto;
         height: 100%;
         transition: 0.35s all ease;

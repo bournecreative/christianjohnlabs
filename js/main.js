@@ -7,12 +7,14 @@ function navScroller(){
       //updates line height of navigation lines to maintain vertical centered
       $('.navLinks').addClass('navLinks_scrolled');
       $('.brand_text').addClass('brand_text_scrolled');
+      $('.brand img').addClass('mobile_img');
     }else{
       //resizes navigation height
       $('.navigation').removeClass('scrolled');
       //updates line height of navigation lines to maintain vertical centered
       $('.navLinks').removeClass('navLinks_scrolled');
       $('.brand_text').removeClass('brand_text_scrolled');
+      $('.brand img').removeClass('mobile_img');
     }
   })
 }
