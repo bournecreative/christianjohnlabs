@@ -55,7 +55,13 @@ a:focus {
     margin-left: 5%;
 }
 
-
+.brand img{
+    height: 100vh;
+    transition: 0.35s all ease;
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1); /* Standard syntax */
+}
 
 .brand img:hover{
     height: 100%;
@@ -1286,13 +1292,6 @@ mobile NAV
 */
 
     /* mobile navigation */
-    .brand img{
-        height: 100%;
-        transition: 0.35s all ease;
-        -ms-transform: scale(1); /* IE 9 */
-        -webkit-transform: scale(1); /* Safari */
-        transform: scale(1); /* Standard syntax */
-    }
 
     .brand_text{
         display: none;
@@ -1618,15 +1617,6 @@ mobile CONNECT page
 */
 
 @media screen and (max-width: 376px) {
-    /* mobile welcome background */
-    .brand img{
-        width: auto;
-        height: 100%;
-        transition: 0.35s all ease;
-        -ms-transform: scale(1); /* IE 9 */
-        -webkit-transform: scale(1); /* Safari */
-        transform: scale(1); /* Standard syntax */
-    }
 
     #welcome{
         position: relative;
