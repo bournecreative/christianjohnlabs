@@ -50,7 +50,6 @@ a:focus {
 }
 
 .brand{
-    position: relative;
     display: inline-block;
     height: 100%;
     margin-left: 5%;
@@ -853,8 +852,7 @@ PROJECTS page
 #projects{
     background-color: #33bab1;
     width: 100%;
-    height: 100%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 /* container for project selectors */
@@ -868,7 +866,7 @@ PROJECTS page
 /* container for the project title, purpose and description */
 .project_carousel{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     overflow-y: hidden;
 }
 
@@ -962,16 +960,12 @@ PROJECTS page
 
 /* container for the project title, purpose and description */
 .project_slide {
-    display: none;
+    display: block;
     width: 70%;
     height: 100%;
     margin: 0 auto;
     animation-name: fadeIn;
     animation-duration: .5s;
-}
-
-.project_1{
-    display: block;
 }
 
 /* project title */
@@ -1020,7 +1014,6 @@ PROJECTS page
     padding: 2% 0;
 }
 
-
 /*.project_1_IMG{*/
     /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
     /*background-size: contain;*/
@@ -1028,34 +1021,34 @@ PROJECTS page
     /*background-position: top center;*/
 /*}*/
 
-.project_2_IMG{
+.project_2{
     position: relative;
-    background: url("../imgs/angular-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
     width: 100%;
-    height: 50vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
-.project_3_IMG{
-    position: relative;
-    background: url("../imgs/js-calculator.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
+.project_2 img{
     width: 100%;
-    height: 50vh;
-    overflow-y: hidden;
 }
 
-.project_4_IMG{
+.project_3{
     position: relative;
-    background: url("../imgs/jquery-api-cms.jpg") no-repeat;
-    background-size: contain;
-    background-position: top center;
     width: 100%;
-    height: 50vh;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+
+.project_3 img{
+    width: 100%;
+}
+
+.project_4{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project_4 img{
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -1073,6 +1066,7 @@ PROJECTS page
     position: absolute;
     width: 100%;
     height: 15vh;
+    top: 0;
     line-height: 15vh;
     box-sizing: border-box;
     background: rgba(0,0,0,0.9);
@@ -1280,7 +1274,7 @@ Overlay
 
 /*
 ***********************************
- ------------> MOBILE <------------
+ ------------> MOBILE <-----------
 ***********************************
 */
 
@@ -1327,10 +1321,10 @@ mobile WELCOME page
     /* mobile welcome background */
     #welcome{
         position: relative;
-        background: url("../imgs/mobile_lab-640x1136.jpg");
+        background: url("../imgs/lab-1400x760.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: center;
         background-attachment: fixed;
         width: 100%;
         min-height: 100vh;
@@ -1589,20 +1583,58 @@ mobile PROJECTS page
         color: #00a99d;
     }
 
-    /* square project icons text */
-    /* element title */
+    /* mobile square project icons text */
+    /* mobile element title */
     .center_content h3{
         font-size: 5vw;
     }
 
-    /* element number */
+    /* mobile element number */
     .pro_ele_Num{
         font-size: 4vw;
     }
 
-    /* element description */
+    /* mobile element description */
     .pro_ele_desc{
         font-size: 2.5vw;
+    }
+
+    /*MOBILE PROJECT SECTION*/
+
+    /* project title */
+    .project_slide h2{
+        font-size: 6vw;
+        padding: 0 0 1vh 0;
+    }
+
+    /* project description */
+    .project_slide ul{
+        padding: 2% 0;
+    }
+
+    /* mobile icon text bullets */
+    .tech .fa{
+        font-size: 4vw;
+    }
+
+    /* mobile titles */
+    .project_slide .title{
+        font-size: 5vw;
+    }
+
+    /* mobile purpose text */
+    .purpose{
+        font-size: 4vw;
+    }
+
+    /* mobile highlights/details text */
+    .highlights{
+        font-size: 4vw;
+    }
+
+    /* mobile tech desc text */
+    .tech{
+        font-size: 3vw;
     }
 
 /*
@@ -1634,6 +1666,7 @@ mobile CONNECT page
     and (min-device-width : 320px)
     and (max-device-width : 568px) {
 
+    /* prevents 100% scaling issues with mobile Safari */
     .brand{
         position: relative;
         display: inline-block;
@@ -1641,6 +1674,7 @@ mobile CONNECT page
         margin-left: 5%;
     }
 
+    /* prevents 100% scaling issues with mobile Safari */
     .brand img{
         position: absolute;
         top: 0;
@@ -1653,11 +1687,10 @@ mobile CONNECT page
 
     #welcome{
         position: relative;
-        background: url("../imgs/mobile_lab-640x1136.jpg");
+        background: url("../imgs/lab-1400x760.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
-        /*safari mobile does not use fixed*/
+        background-position: center;
         background-attachment: scroll;
         width: 100%;
         min-height: 100vh;
