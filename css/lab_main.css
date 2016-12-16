@@ -66,9 +66,9 @@ a:focus {
 .brand img:hover{
     height: 100%;
     transition: 0.35s all ease;
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari */
-    transform: scale(1.1); /* Standard syntax */
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2); /* Standard syntax */
 }
 
 .brand_text{
@@ -77,13 +77,15 @@ a:focus {
     vertical-align: top;
     line-height: 10vh;
     font-size: 1.5vw;
+    transition: 0.35s all ease;
 }
 
 .navLinks{
+    display: inline-block;
     margin-right: 5%;
     line-height: 10vh;
-    display: inline-block;
     float: right;
+    transition: 0.35s all ease;
 }
 
 .navigation ul{
@@ -112,7 +114,6 @@ a:focus {
     color: #C544B4;
 }
 
-
 /* Navigation SCROLL
 * changes the size of nav elements according to height
 */
@@ -125,11 +126,14 @@ a:focus {
 /* update navigation bar line height for nav links*/
 .navLinks_scrolled {
     line-height: 5vh;
+    transition: 0.35s all ease;
 }
 
 /* update navigation bar line height for brand name*/
 .brand_text_scrolled{
     line-height: 5vh;
+    -webkit-transition: -webkit-transform 0.5s ease;/* Safari */
+    transition: transform 0.5s ease;/* Standard syntax */
 }
 
 /***  WELCOME page ***/
@@ -405,7 +409,6 @@ WHO page
     overflow: hidden;
     background: #00a99d;
     transition: 0.05s;
-    cursor: pointer;
 }
 
 .element_box:before{
@@ -485,7 +488,6 @@ WHO page
     left: 0;
     right: 0;
     margin: 0;
-    color: #00a99d;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, 200%, 0);
@@ -494,6 +496,8 @@ WHO page
 
 .caption a{
     color: #C544B4;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .caption a:hover{
@@ -621,7 +625,7 @@ WHAT page
     font-family: 'Heebo', sans-serif;
     font-size: 1em;
     margin: 0;
-    padding: 1% 10% 3% 10%;
+    padding: 1% 9% 3% 9%;
     color: #ffffff;
 }
 
@@ -648,7 +652,6 @@ WHAT page
     margin: 0;
     z-index: 0;
     font-size: 0;
-    cursor: pointer;
 }
 
 /* code side */
