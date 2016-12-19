@@ -113,6 +113,17 @@ function closeOverlay(){
   })
 }
 
+//dynamically build link for email
+function buildEmailLink(){
+  var link = $('<li>',{class:'connection_link'});
+  var emailLink = $('<a>', {href: "mailto:iamchristianjohn@gmail.com"});
+  var icon = $('<i>',{class:'fa fa-envelope', 'aria-hidden':"true"});
+  
+  $('.connection_links ul').append(link);
+  $(link).append(emailLink);
+  $(emailLink).append(icon);
+  
+}
 
 //ready this functions on dom load
 $(document).ready(function(){
@@ -123,4 +134,5 @@ $(document).ready(function(){
   navHighLighter();
   openOverlay();
   closeOverlay();
+  buildEmailLink();
 });

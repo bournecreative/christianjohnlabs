@@ -1652,13 +1652,21 @@ mobile CONNECT page
 ***********************************
 */
 
+    .col_70_footer{
+        width: 100%;
+    }
+
     .connect_title{
         font-size: 15vw;
     }
 
     .connection_link{
         display: inline-block;
-        padding: 2% 3% .5% 3%;
+        padding: 2% 2% .5% 2%;
+    }
+
+    .connection_link a{
+        font-size: 3.5em;
     }
 
     .copyRight{
