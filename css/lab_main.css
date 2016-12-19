@@ -918,18 +918,23 @@ PROJECTS page
     padding-top: 100%;
 }
 
+.currentSlide{
+    background-color: #002a27;
+}
+
 /* colors for square project icons */
 .project_element:hover{
-    background: #cceeeb;
+    background: #66cbc4;
+    /*background: #00554f;*/
 }
 
-.project_element:nth-child(2n +2){
-    background: #66cbc4;
-}
+/*.project_element:nth-child(2n +2){*/
+    /*background: #66cbc4;*/
+/*}*/
 
 .project_element:nth-child(2n +2):hover{
-    background: #007f76;
-}
+     background: #007f76;
+ }
 
 /* square project icons text */
 /* element title */
@@ -1086,13 +1091,24 @@ PROJECTS page
 }
 
 /*Project caption area link to be revealed on hover */
-.project_caption a{
+.project_caption .demo{
     position: absolute;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    left: 10%;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #cceeeb;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.project_caption .code{
+    position: absolute;
+    text-align: center;
+    right: 10%;
     font-size: 1.5em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -1199,11 +1215,33 @@ footer{
     padding: 2% 1% .5% 1%;
 }
 
-.connection_link a{
-    display: inline-block;
-    padding: 0;
-    font-size: 4em;
-    color: #00a99d;
+/*Project caption area link to be revealed on hover */
+.project_caption .demo{
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #cceeeb;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.project_caption .code{
+    position: absolute;
+    text-align: center;
+    right: 5%;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #cceeeb;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
 }
 
 
@@ -1586,10 +1624,6 @@ mobile PROJECTS page
     .project_element {
         position: relative;
         width: 20vw;
-        margin: 0 auto;
-        overflow: hidden;
-        background: #99ddd8;
-        color: #00a99d;
     }
 
     /* mobile square project icons text */
