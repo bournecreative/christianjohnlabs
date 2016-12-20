@@ -903,7 +903,7 @@ PROJECTS page
 }
 
 /* Responsive element box for square project icons*/
-.project_element {
+.project_element{
     position: relative;
     width: 8vw;
     margin: 0 auto;
@@ -1025,12 +1025,16 @@ PROJECTS page
     padding: 2% 0;
 }
 
-/*.project_1_IMG{*/
-    /*background: url("../imgs/rogue-fighter-web-app.jpg") no-repeat;*/
-    /*background-size: contain;*/
-    /*height: 70%;*/
-    /*background-position: top center;*/
-/*}*/
+.project_1{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project_1 img{
+    width: 100%;
+}
 
 .project_2{
     position: relative;
@@ -1065,6 +1069,17 @@ PROJECTS page
     width: 100%;
 }
 
+.project_5{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project_5 img{
+    width: 100%;
+}
+
 @keyframes fadeIn {
     0%   {opacity: .02}
     50%  {opacity: .05}
@@ -1091,36 +1106,40 @@ PROJECTS page
 }
 
 /*Project caption area link to be revealed on hover */
-.project_caption .demo{
+.demo{
     position: absolute;
     text-align: center;
     left: 10%;
     font-size: 1.5em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: #cceeeb;
+    color: #c544b4;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate(0, -200%);
     transform: translate(0, -200%);
 }
 
-.project_caption .code{
+.demo:hover{
+    color: #cceeeb;
+}
+
+.code{
     position: absolute;
     text-align: center;
     right: 10%;
     font-size: 1.5em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: #cceeeb;
+    color: #c544b4;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate(0, -200%);
     transform: translate(0, -200%);
 }
 
-.project_caption a:hover{
-    color: #33bab1;
+.code:hover{
+    color: #cceeeb;
 }
 
 /* move caption area into view on hover */
@@ -1696,9 +1715,13 @@ Overlay
         top: 12%;
         width: 90%;
     }
+    .overlay-content .thank_you{
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
 
     .overlay-content .link_title {
-        margin: 5% 0;
+        margin: 3% 0;
     }
 }
 /*
