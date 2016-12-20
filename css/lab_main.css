@@ -21,11 +21,11 @@ html, body{
 }
 
 /* removes outlines for links in firefox */
-a:focus {
+a:focus{
     outline: none;
 }
 
-.fa {
+.fa{
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -124,7 +124,7 @@ a:focus {
 }
 
 /* update navigation bar line height for nav links*/
-.navLinks_scrolled {
+.navLinks_scrolled{
     line-height: 5vh;
     transition: 0.35s all ease;
 }
@@ -1273,7 +1273,7 @@ Overlay
 }
 
 /* content within overlay */
-.overlay-content{
+.overlay_content{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -1283,30 +1283,30 @@ Overlay
     width: 50%;
 }
 
-.overlay-content .thank_you{
+.overlay_content .thank_you{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     color: #ffffff;
 }
 
-.overlay-content ul{
+.overlay_content ul{
     margin: 0;
     padding: 0;
 }
 
-.overlay-content a{
+.overlay_content a{
     text-decoration: none;
     font-size: 2em;
     color: #00a99d;
     transition: 0.5s;
 }
 
-.overlay-content a:hover{
+.overlay_content a:hover{
     color: #c544b4;
 }
 
-.overlay-content .link_title{
+.overlay_content .link_title{
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -1338,13 +1338,13 @@ Overlay
 /* Portrait and Landscape */
 @media only screen
 and (min-device-width: 600px)
-and (max-device-width: 1024px) {
+and (max-device-width: 1024px){
 
-    .navLinks {
+    .navLinks{
         margin-right: 3%;
     }
 
-    .navigation li {
+    .navigation li{
         padding: 0 2%;
     }
 
@@ -1356,7 +1356,7 @@ and (max-device-width: 1024px) {
     */
 
     /* mobile welcome background */
-    #welcome {
+    #welcome{
         position: relative;
         background: url("../imgs/lab-1400x760.jpg");
         background-repeat: no-repeat;
@@ -1373,7 +1373,7 @@ and (max-device-width: 1024px) {
     ***********************************
     */
     /* tablet WHO heading text */
-    #who h1 {
+    #who h1{
         font-size: 2em;
         line-height: 2em;
         padding: 15% 13% 1% 13%;
@@ -1389,47 +1389,47 @@ and (max-device-width: 1024px) {
     }
 
     /* tablet WHO computer icon */
-    .work_computer {
+    .work_computer{
         width: 50vw;
     }
 
     /* tablet WHO content text */
-    .interest_text {
+    .interest_text{
         font-size: 3vw;
         padding: 5% 10% 2% 10%;
     }
 
     /*tablet update 30 to 50%*/
-    .col_30 {
+    .col_30{
         width: 50%;
     }
 
     /*update element boxes to be larger for tablet */
-    .element_box {
+    .element_box{
         width: 35vw;
     }
 
     /* tablet element text box  */
-    .center_content h2 {
+    .center_content h2{
         font-size: 10vw;
     }
 
     /* tablet element text  */
-    .ele_desc {
+    .ele_desc{
         font-size: 4vw;
     }
 
-    .ele_Num {
+    .ele_Num{
         font-size: 3vw;
     }
 
     /* tablet caption area */
-    .caption {
+    .caption{
         height: 15vw;
     }
 
     /* tablet caption formatting */
-    .caption p {
+    .caption p{
         font-size: 4vw;
         line-height: 4vw;
         padding: 4vw 2vw;
@@ -1465,20 +1465,20 @@ and (max-device-width: 1024px) {
     }
 
     /* tablet division triangle */
-    .rel_container:before {
+    .rel_container:before{
         border-left: 7vw solid transparent;
         border-right: 7vw solid transparent;
         border-top: 7vw solid #33bab1;
     }
 
     /* tablet images collage */
-    .image_row_1 {
+    .image_row_1{
         display: block;
         width: 100%;
         height: 20vh;
     }
 
-    .rogue_image {
+    .rogue_image{
         position: relative;
         display: inline-block;
         width: 100%;
@@ -1490,17 +1490,17 @@ and (max-device-width: 1024px) {
         overflow: hidden;
     }
 
-    .lab_image {
+    .lab_image{
         display: none;
     }
 
-    .image_row_2 {
+    .image_row_2{
         display: block;
         width: 100%;
         height: 30vh;
     }
 
-    .vol_image {
+    .vol_image{
         position: relative;
         display: inline-block;
         width: 60%;
@@ -1511,7 +1511,7 @@ and (max-device-width: 1024px) {
         overflow: hidden;
     }
 
-    .arch_image {
+    .arch_image{
         position: relative;
         display: inline-block;
         width: 40%;
@@ -1520,7 +1520,7 @@ and (max-device-width: 1024px) {
         background-position: top left;
     }
 
-    .casa_image {
+    .casa_image{
         display: none;
     }
 
@@ -1530,7 +1530,7 @@ and (max-device-width: 1024px) {
         height: 20vh;
     }
 
-    .labs_card_image {
+    .labs_card_image{
         position: relative;
         display: inline-block;
         width: 70%;
@@ -1541,7 +1541,7 @@ and (max-device-width: 1024px) {
         overflow: hidden;
     }
 
-    .cat_a_image {
+    .cat_a_image{
         position: relative;
         display: inline-block;
         width: 30%;
@@ -1553,17 +1553,17 @@ and (max-device-width: 1024px) {
         overflow: hidden;
     }
 
-    .nexus_image {
+    .nexus_image{
         display: none;
     }
 
-    .image_row_4 {
+    .image_row_4{
         display: block;
         width: 100%;
         height: 30vh;
     }
 
-    .pb_droid_image {
+    .pb_droid_image{
         position: relative;
         display: inline-block;
         width: 30%;
@@ -1574,7 +1574,7 @@ and (max-device-width: 1024px) {
         overflow: hidden;
     }
 
-    .trooper_image {
+    .trooper_image{
         position: relative;
         display: inline-block;
         width: 70%;
@@ -1592,62 +1592,62 @@ and (max-device-width: 1024px) {
     */
 
     /* tablet Responsive element box for square project icons*/
-    .project_element {
+    .project_element{
         position: relative;
         width: 13vw;
     }
 
     /* tablet square project icons text */
     /* tablet element title */
-    .center_content h3 {
+    .center_content h3{
         font-size: 1.5em;
     }
 
     /* tablet element number */
-    .pro_ele_Num {
+    .pro_ele_Num{
         font-size: 1.3em;
     }
 
     /* tablet element description */
-    .pro_ele_desc {
+    .pro_ele_desc{
         font-size: 1.4vw;
     }
 
     /*tablet PROJECT SECTION*/
 
     /* tablet title */
-    .project_slide h2 {
+    .project_slide h2{
         font-size: 2em;
         padding: 0 0 1vh 0;
     }
 
     /* tablet description */
-    .project_slide ul {
+    .project_slide ul{
         padding: 2% 0;
     }
 
     /* tablet titles */
-    .project_slide .title {
+    .project_slide .title{
         font-size: 1em;
     }
 
     /* tablet purpose text */
-    .purpose {
+    .purpose{
         font-size: 1.2em;
     }
 
     /* tablet highlights/details text */
-    .highlights {
+    .highlights{
         font-size: 1.2em;
     }
 
     /* tablet icon text bullets */
-    .tech .fa {
+    .tech .fa{
         font-size: 1.2em;
     }
 
     /* tablet tech desc text */
-    .tech {
+    .tech{
         font-size: 1em;
     }
 
@@ -1656,11 +1656,11 @@ and (max-device-width: 1024px) {
   tablet CONNECT page
   ***********************************
   */
-    .col_70_footer {
+    .col_70_footer{
         width: 100%;
     }
 
-    .connect_title {
+    .connect_title{
         font-size: 10vw;
         padding: 1% 0;
     }
@@ -1671,16 +1671,16 @@ and (max-device-width: 1024px) {
     ***********************************
     */
 
-    .connection_link {
+    .connection_link{
         display: inline-block;
         padding: 2% 2% 1% 2%;
     }
 
-    .connection_link a {
+    .connection_link a{
         font-size: 4em;
     }
 
-    .copyRight {
+    .copyRight{
         padding: 0 0 1% 0;
     }
 
@@ -1689,16 +1689,16 @@ and (max-device-width: 1024px) {
     tablet OVERLAY
     ***********************************
     */
-    .overlay-content {
+    .overlay_content{
         top: 12%;
         width: 90%;
     }
-    .overlay-content .thank_you{
+    .overlay_content .thank_you{
         font-size: 1.2em;
         line-height: 1.8em;
     }
 
-    .overlay-content .link_title {
+    .overlay_content .link_title{
         margin: 3% 0;
     }
 }
@@ -1827,7 +1827,7 @@ and (max-device-width: 1024px) {
     }
 
     /* mobile caption formatting */
-    .caption p {
+    .caption p{
         font-size: 5vw;
         line-height: 5vw;
         padding: 4vw 2vw;
@@ -2089,17 +2089,17 @@ and (max-device-width: 1024px) {
     ***********************************
     */
 
-    .overlay-content{
+    .overlay_content{
         top: 12%;
         width: 90%;
     }
 
-    .overlay-content .thank_you{
+    .overlay_content .thank_you{
         font-size: 1.2em;
         line-height: 1.8em;
     }
 
-    .overlay-content .link_title{
+    .overlay_content .link_title{
         margin: 3% 0;
     }
 }
