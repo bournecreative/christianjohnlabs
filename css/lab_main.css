@@ -1215,35 +1215,10 @@ footer{
     padding: 2% 1% .5% 1%;
 }
 
-/*Project caption area link to be revealed on hover */
-.project_caption .demo{
-    position: absolute;
-    text-align: center;
-    left: 5%;
-    font-size: 1em;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #cceeeb;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate(0, -200%);
-    transform: translate(0, -200%);
+.connection_link a{
+    font-size: 4em;
+    color: #00a99d;
 }
-
-.project_caption .code{
-    position: absolute;
-    text-align: center;
-    right: 5%;
-    font-size: 1em;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #cceeeb;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate(0, -200%);
-    transform: translate(0, -200%);
-}
-
 
 .connection_link a:hover{
     color: #c544b4;
@@ -1257,7 +1232,6 @@ footer{
     padding: 0 0 .5% 0;
     text-align: center;
     color: #00a99d;
-    /*background-color: #007f76;*/
 }
 
 /*
@@ -1282,14 +1256,29 @@ Overlay
 /* content within overlay */
 .overlay-content{
     position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 12%;
+    width: 50%;
+}
+
+.overlay-content .thank_you{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.overlay-content ul{
+    margin: 0;
+    padding: 0;
 }
 
 .overlay-content a {
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     color: #00a99d;
     transition: 0.5s;
 }
@@ -1298,12 +1287,14 @@ Overlay
     color: #c544b4;
 }
 
-.overlay-content p {
+.overlay-content .link_title {
     display: inline-block;
-    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: 1.5em;
-    color: #00a99d;
+    color: #ffffff;
     padding: 0 1%;
+    margin: 2% 0;
 }
 
 .close_btn{
@@ -1325,17 +1316,15 @@ Overlay
 ***********************************
 */
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
 
-/*
-***********************************
-mobile NAV
-***********************************
-*/
-
+    /*
+    ***********************************
+    mobile NAV
+    ***********************************
+    */
     /* mobile navigation */
-
-    .brand img{
+    .brand img {
         height: 100%;
         transition: 0.35s all ease;
         -ms-transform: scale(1); /* IE 9 */
@@ -1343,30 +1332,29 @@ mobile NAV
         transform: scale(1); /* Standard syntax */
     }
 
-    .brand_text{
+    .brand_text {
         display: none;
     }
 
-    .navLinks{
+    .navLinks {
         margin-right: 3%;
     }
 
-    .navigation li{
+    .navigation li {
         padding: 0 2%;
     }
 
-    .navigation ul a{
+    .navigation ul a {
         font-size: 4vw;
     }
 
-/*
-***********************************
-mobile WELCOME page
-***********************************
-*/
-
+    /*
+    ***********************************
+    mobile WELCOME page
+    ***********************************
+    */
     /* mobile welcome background */
-    #welcome{
+    #welcome {
         position: relative;
         background: url("../imgs/lab-1400x760.jpg");
         background-repeat: no-repeat;
@@ -1377,41 +1365,37 @@ mobile WELCOME page
         min-height: 100vh;
     }
 
-/*
-***********************************
-mobile WHO page
-***********************************
-*/
-
+    /*
+    ***********************************
+    mobile WHO page
+    ***********************************
+    */
     /* mobile WHO heading text */
-
-    #who h1{
+    #who h1 {
         font-size: 1.2em;
         padding: 20% 13% 1% 13%;
     }
 
-    .main_heading{
+    .main_heading {
         font-size: 3em;
     }
 
-    .sub_heading{
+    .sub_heading {
         font-size: 1.5em;
     }
 
     /* mobile WHO computer icon */
-
-    .work_computer{
+    .work_computer {
         width: 50vw;
     }
 
     /* mobile WHO content text */
-
-    .interest_text{
+    .interest_text {
         padding: 5% 10% 2% 10%;
     }
 
     /*mobile update 30 to 100%*/
-    .col_30{
+    .col_30 {
         display: inline-block;
         text-align: center;
         width: 100%;
@@ -1420,21 +1404,21 @@ mobile WHO page
     }
 
     /*update element boxes to be larger for mobile */
-    .element_box{
+    .element_box {
         width: 50vw;
     }
 
     /* mobile element text box  */
-    .center_content h2{
+    .center_content h2 {
         font-size: 15vw;
     }
 
     /* mobile element text  */
-    .ele_desc{
+    .ele_desc {
         font-size: 5vw;
     }
 
-    .ele_Num{
+    .ele_Num {
         font-size: 5vw;
         margin: 0;
         top: 5%;
@@ -1442,39 +1426,38 @@ mobile WHO page
     }
 
     /* mobile caption area */
-    .caption{
+    .caption {
         height: 15vw;
 
     }
 
     /* mobile caption formatting */
-    .caption p{
+    .caption p {
         font-size: 5vw;
         line-height: 5vw;
         padding: 4vw 2vw;
     }
 
-/*
-***********************************
-mobile WHAT page
-***********************************
-*/
-
+    /*
+    ***********************************
+    mobile WHAT page
+    ***********************************
+    */
     /* mobile what_section title */
-    .what_heading{
+    .what_heading {
         font-size: 2.5em;
         padding: 3% 0 0 0;
         margin: 0;
     }
 
     /* mobile opening headline*/
-    .what_tag{
+    .what_tag {
         font-size: 2em;
         padding: 2% 15% 2% 15%;
     }
 
     /* mobile closing headline*/
-    .what_closing{
+    .what_closing {
         font-size: 1.7em;
         padding: 1% 0;
     }
@@ -1487,21 +1470,20 @@ mobile WHAT page
     }
 
     /* mobile division triangle */
-
-    .rel_container:before{
+    .rel_container:before {
         border-left: 7vw solid transparent;
         border-right: 7vw solid transparent;
         border-top: 7vw solid #33bab1;
     }
 
     /* mobile images collage */
-    .image_row_1{
+    .image_row_1 {
         display: block;
         width: 100%;
-        height:20vh;
+        height: 20vh;
     }
 
-    .rogue_image{
+    .rogue_image {
         position: relative;
         display: inline-block;
         width: 100%;
@@ -1513,17 +1495,17 @@ mobile WHAT page
         overflow: hidden;
     }
 
-    .lab_image{
+    .lab_image {
         display: none;
     }
 
-    .image_row_2{
+    .image_row_2 {
         display: block;
         width: 100%;
-        height:30vh;
+        height: 30vh;
     }
 
-    .vol_image{
+    .vol_image {
         position: relative;
         display: inline-block;
         width: 60%;
@@ -1534,7 +1516,7 @@ mobile WHAT page
         overflow: hidden;
     }
 
-    .arch_image{
+    .arch_image {
         position: relative;
         display: inline-block;
         width: 40%;
@@ -1543,17 +1525,17 @@ mobile WHAT page
         background-position: top left;
     }
 
-    .casa_image{
-     display: none;
+    .casa_image {
+        display: none;
     }
 
-    .image_row_3{
+    .image_row_3 {
         display: block;
         width: 100%;
-        height:20vh;
+        height: 20vh;
     }
 
-    .labs_card_image{
+    .labs_card_image {
         position: relative;
         display: inline-block;
         width: 70%;
@@ -1564,7 +1546,7 @@ mobile WHAT page
         overflow: hidden;
     }
 
-    .cat_a_image{
+    .cat_a_image {
         position: relative;
         display: inline-block;
         width: 30%;
@@ -1576,17 +1558,17 @@ mobile WHAT page
         overflow: hidden;
     }
 
-    .nexus_image{
+    .nexus_image {
         display: none;
     }
 
-    .image_row_4{
+    .image_row_4 {
         display: block;
         width: 100%;
-        height:30vh;
+        height: 30vh;
     }
 
-    .pb_droid_image{
+    .pb_droid_image {
         position: relative;
         display: inline-block;
         width: 30%;
@@ -1597,7 +1579,7 @@ mobile WHAT page
         overflow: hidden;
     }
 
-    .trooper_image{
+    .trooper_image {
         position: relative;
         display: inline-block;
         width: 70%;
@@ -1608,13 +1590,13 @@ mobile WHAT page
         overflow: hidden;
     }
 
-/*
-***********************************
-mobile PROJECTS page
-***********************************
-*/
+    /*
+    ***********************************
+    mobile PROJECTS page
+    ***********************************
+    */
     /* mobile what_section title */
-    .what_heading{
+    .what_heading {
         font-size: 2.5em;
         padding: 3% 0 0 0;
         margin: 0;
@@ -1628,86 +1610,98 @@ mobile PROJECTS page
 
     /* mobile square project icons text */
     /* mobile element title */
-    .center_content h3{
+    .center_content h3 {
         font-size: 5vw;
     }
 
     /* mobile element number */
-    .pro_ele_Num{
+    .pro_ele_Num {
         font-size: 4vw;
     }
 
     /* mobile element description */
-    .pro_ele_desc{
+    .pro_ele_desc {
         font-size: 2.5vw;
     }
 
     /*MOBILE PROJECT SECTION*/
-
     /* project title */
-    .project_slide h2{
+    .project_slide h2 {
         font-size: 6vw;
         padding: 0 0 1vh 0;
     }
 
     /* project description */
-    .project_slide ul{
+    .project_slide ul {
         padding: 2% 0;
     }
 
     /* mobile icon text bullets */
-    .tech .fa{
+    .tech .fa {
         font-size: 4vw;
     }
 
     /* mobile titles */
-    .project_slide .title{
+    .project_slide .title {
         font-size: 5vw;
     }
 
     /* mobile purpose text */
-    .purpose{
+    .purpose {
         font-size: 4vw;
     }
 
     /* mobile highlights/details text */
-    .highlights{
+    .highlights {
         font-size: 4vw;
     }
 
     /* mobile tech desc text */
-    .tech{
+    .tech {
         font-size: 3vw;
     }
 
-/*
-***********************************
-mobile CONNECT page
-***********************************
-*/
-
-    .col_70_footer{
+    /*
+    ***********************************
+    mobile CONNECT page
+    ***********************************
+    */
+    .col_70_footer {
         width: 100%;
     }
 
-    .connect_title{
+    .connect_title {
         font-size: 15vw;
     }
 
-    .connection_link{
+    .connection_link {
         display: inline-block;
         padding: 2% 2% .5% 2%;
     }
 
-    .connection_link a{
+    .connection_link a {
         font-size: 3.5em;
     }
 
-    .copyRight{
+    .copyRight {
         padding: 0 0 5% 0;
     }
 
-}/*
+    /*
+    ***********************************
+    mobile OVERLAY
+    ***********************************
+    */
+    .overlay-content {
+        top: 12%;
+        width: 90%;
+    }
+
+    .overlay-content .link_title {
+        margin: 5% 0;
+    }
+}
+/*
 ***********************************
  ------------> IPHONE MOBILE <------------
 ***********************************
@@ -1747,4 +1741,3 @@ mobile CONNECT page
         min-height: 100vh;
     }
 }
-/*
