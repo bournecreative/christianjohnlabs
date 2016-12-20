@@ -1392,7 +1392,7 @@ Overlay
     /* mobile WHO heading text */
     #who h1 {
         font-size: 1.2em;
-        padding: 20% 13% 1% 13%;
+        padding: 18% 13% 1% 13%;
     }
 
     .main_heading {
@@ -1465,8 +1465,7 @@ Overlay
     /* mobile what_section title */
     .what_heading {
         font-size: 2.5em;
-        padding: 3% 0 0 0;
-        margin: 0;
+        padding: 12% 0 0 0;
     }
 
     /* mobile opening headline*/
@@ -1614,12 +1613,6 @@ Overlay
     mobile PROJECTS page
     ***********************************
     */
-    /* mobile what_section title */
-    .what_heading {
-        font-size: 2.5em;
-        padding: 3% 0 0 0;
-        margin: 0;
-    }
 
     /* mobile Responsive element box for square project icons*/
     .project_element {
@@ -1691,6 +1684,7 @@ Overlay
 
     .connect_title {
         font-size: 15vw;
+        padding: 1% 0;
     }
 
     .connection_link {
@@ -1703,7 +1697,7 @@ Overlay
     }
 
     .copyRight {
-        padding: 0 0 5% 0;
+        padding: 0 0 3% 0;
     }
 
     /*
