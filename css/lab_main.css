@@ -1331,6 +1331,382 @@ Overlay
 
 /*
 ***********************************
+-------------> TABLET <------------
+***********************************
+*/
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 700px)
+and (max-device-width: 900px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .navLinks {
+        margin-right: 3%;
+    }
+
+    .navigation li {
+        padding: 0 2%;
+    }
+
+    .navigation ul a {
+        font-size: 4vw;
+    }
+
+    /*
+    ***********************************
+    tablet WELCOME page
+    ***********************************
+    */
+
+    /* mobile welcome background */
+    #welcome {
+        position: relative;
+        background: url("../imgs/lab-1400x760.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    /*
+    ***********************************
+    tablet WHO page
+    ***********************************
+    */
+    /* tablet WHO heading text */
+    #who h1 {
+        font-size: 2.5em;
+        line-height: 1.8em;
+        padding: 15% 13% 1% 13%;
+    }
+
+    .main_heading{
+        font-size: 3em;
+    }
+
+    .sub_heading{
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    /* tablet WHO computer icon */
+    .work_computer {
+        width: 50vw;
+    }
+
+    /* tablet WHO content text */
+    .interest_text {
+        font-size: 3vw;
+        padding: 5% 10% 2% 10%;
+    }
+
+    /*tablet update 30 to 50%*/
+    .col_30 {
+       width: 50%;
+    }
+
+    /*update element boxes to be larger for tablet */
+    .element_box {
+        width: 35vw;
+    }
+
+    /* tablet element text box  */
+    .center_content h2 {
+        font-size: 10vw;
+    }
+
+    /* tablet element text  */
+    .ele_desc {
+        font-size: 4vw;
+    }
+
+    .ele_Num {
+        font-size: 3vw;
+    }
+
+    /* tablet caption area */
+    .caption {
+        height: 15vw;
+    }
+
+    /* tablet caption formatting */
+    .caption p {
+        font-size: 4vw;
+        line-height: 4vw;
+        padding: 4vw 2vw;
+    }
+
+    /*
+   ***********************************
+   tablet WHAT page
+   ***********************************
+   */
+
+    /* tablet what_section title */
+    .what_heading{
+        font-size: 3em;
+        padding: 10% 0 0 0;
+    }
+
+    /* tablet opening headline*/
+    .what_tag{
+        font-size: 2.5em;
+        padding: 2% 5% 2% 5%;
+    }
+
+    /*tablet closing headline*/
+    .what_closing{
+        font-size: 2.5em;
+    }
+
+    /*tablet closing paragraph*/
+    .what_desc{
+        font-size: 1.3em;
+        padding: 2% 8% 10% 8%;
+    }
+
+    /* tablet division triangle */
+    .rel_container:before {
+        border-left: 7vw solid transparent;
+        border-right: 7vw solid transparent;
+        border-top: 7vw solid #33bab1;
+    }
+
+    /* tablet images collage */
+    .image_row_1 {
+        display: block;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .rogue_image {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url("../imgs/rogue-fighter-icon.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    .lab_image {
+        display: none;
+    }
+
+    .image_row_2 {
+        display: block;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .vol_image {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        height: 100%;
+        background: url("../imgs/voltron.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .arch_image {
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        background: url("../imgs/archer-playing-card-back.png") no-repeat;
+        background-position: top left;
+    }
+
+    .casa_image {
+        display: none;
+    }
+
+    .image_row_3 {
+        display: block;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .labs_card_image {
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+        background: url("../imgs/cjlabs-card.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .cat_a_image {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        background: url("../imgs/american-cat.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #00395e;
+        overflow: hidden;
+    }
+
+    .nexus_image {
+        display: none;
+    }
+
+    .image_row_4 {
+        display: block;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .pb_droid_image {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        background: url("../imgs/imperial-probe-droid-volume.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .trooper_image {
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+        background: url("../imgs/first-order-trooper.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    /*
+    ***********************************
+    tablet PROJECTS page
+    ***********************************
+    */
+
+    /* mobile Responsive element box for square project icons*/
+    .project_element {
+        position: relative;
+        width: 13vw;
+    }
+
+    /* mobile square project icons text */
+    /* mobile element title */
+    .center_content h3 {
+        font-size: 4vw;
+    }
+
+    /* mobile element number */
+    .pro_ele_Num {
+        font-size: 3vw;
+    }
+
+    /* mobile element description */
+    .pro_ele_desc {
+        font-size: 1vw;
+    }
+
+    /*MOBILE PROJECT SECTION*/
+    /* project title */
+    .project_slide h2 {
+        font-size: 5vw;
+        padding: 0 0 1vh 0;
+    }
+
+    /* project description */
+    .project_slide ul {
+        padding: 2% 0;
+    }
+
+    /* mobile titles */
+    .project_slide .title {
+        font-size: 3vw;
+    }
+
+    /* mobile purpose text */
+    .purpose {
+        font-size: 2.5vw;
+    }
+
+    /* mobile highlights/details text */
+    .highlights {
+        font-size: 2.5vw;
+    }
+
+    /* mobile icon text bullets */
+    .tech .fa {
+        font-size: 3vw;
+    }
+
+    /* mobile tech desc text */
+    .tech {
+        font-size: 2.5vw;
+    }
+
+    /*
+  ***********************************
+  tablet CONNECT page
+  ***********************************
+  */
+    .col_70_footer {
+        width: 100%;
+    }
+
+    .connect_title {
+        font-size: 10vw;
+        padding: 1% 0;
+    }
+
+    /*
+    ***********************************
+    tablet FOOTER
+    ***********************************
+    */
+
+    .connection_link {
+        display: inline-block;
+        padding: 2% 2% 1% 2%;
+    }
+
+    .connection_link a {
+        font-size: 4em;
+    }
+
+    .copyRight {
+        padding: 0 0 1% 0;
+    }
+
+    /*
+    ***********************************
+    mobile OVERLAY
+    ***********************************
+    */
+    .overlay-content {
+        top: 12%;
+        width: 90%;
+    }
+    .overlay-content .thank_you{
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+
+    .overlay-content .link_title {
+        margin: 3% 0;
+    }
+}
+/*
+***********************************
  ------------> MOBILE <-----------
 ***********************************
 */
@@ -1342,6 +1718,7 @@ Overlay
     mobile NAV
     ***********************************
     */
+
     /* mobile navigation */
     .brand img {
         height: 100%;
@@ -1687,6 +2064,12 @@ Overlay
         padding: 1% 0;
     }
 
+    /*
+    ***********************************
+    mobile FOOTER
+    ***********************************
+    */
+
     .connection_link {
         display: inline-block;
         padding: 2% 2% .5% 2%;
@@ -1718,6 +2101,7 @@ Overlay
         margin: 3% 0;
     }
 }
+
 /*
 ***********************************
  ------------> IPHONE MOBILE <------------
