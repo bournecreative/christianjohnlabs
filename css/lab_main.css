@@ -1094,9 +1094,9 @@ PROJECTS page
 .project_caption{
     position: absolute;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     top: 0;
-    line-height: 15vh;
+    line-height: 10vh;
     box-sizing: border-box;
     background: rgba(0,0,0,0.9);
     -webkit-transition: -webkit-transform 0.35s;
@@ -1631,9 +1631,24 @@ and (max-device-width: 1024px){
         font-size: 1em;
     }
 
+    /*tablet project caption area */
+    .project_caption{
+        height: 10vh;
+    }
+
+    /* tablet demo link for projects */
+    .demo{
+        font-size: 1.5em;
+    }
+
+    /* tablet GitHub link for projects */
+    .code{
+        font-size: 1.5em;
+    }
+
     /* tablet purpose text */
     .purpose{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     /* tablet highlights/details text */
@@ -2023,6 +2038,22 @@ and (max-device-width: 1024px){
     /* project description */
     .project_slide ul{
         padding: 2% 0;
+    }
+
+    /*mobile project caption area */
+    .project_caption{
+        height: 7vh;
+        line-height: 7vh;
+    }
+
+    /* mobile demo link for projects */
+    .demo{
+        font-size: .8em;
+    }
+
+    /* mobile GitHub link for projects */
+    .code{
+        font-size: .8em;
     }
 
     /* mobile icon text bullets */
