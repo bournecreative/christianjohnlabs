@@ -5,7 +5,11 @@ http://christianjohnlabs.com
 ## Project Details
 - Developed a brand and theme for my web development portfolio
 - Developed image carousel, lightbox module, integrated google maps api, and dynamic DOM element creation
-- Incorporated a variety of handbuilt CSS and javascript animations.
+- Incorporated a variety of handbuilt CSS and javascript animations
+    - Shrinking navigation bar on scroll
+    - Navigation links highlight section based on scroll position
+    - fadeIn/fadeout animations triggered by scroll position
+    - On hover transition effects
 - Responsive UI for various desktop and mobile screen sizes
 
 ### Screen capture of Welcome section desktop view
