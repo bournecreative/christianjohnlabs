@@ -58,6 +58,11 @@ function updateFrame(){
       current_selector = index;
       setFrame();
       break;
+    case 6:
+      current_slide = index;
+      current_selector = index;
+      setFrame();
+      break;
   }
 }
 
